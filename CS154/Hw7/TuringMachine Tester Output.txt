@@ -1,0 +1,22 @@
+twoN TEST
+twoN(3) = 6
+twoN(10) = 20
+twoN(2) = 4
+twoN(7) = 14
+twoN(0) = 0
+
+nSquare TEST
+nsquare(5) = 25
+nsquare(3) = 9
+nsquare(0) = 0
+nsquare(9) = 81
+nsquare(4) = 16
+nsquare(10) = 100
+
+1n 0 1n TEST
+onezeroone(11011) = true
+onezeroone(0) = false
+onezeroone(10) = false
+onezeroone(01) = false
+onezeroone(101) = true
+onezeroone(111111) = false

@@ -1,0 +1,54 @@
+Eric Tam (Scribe) / Joshua Warner (Driver)
+
+PART A
+Step 1: Done
+Step 2:
+create temporary node
+node = first
+run n+1 times{node = node.next}
+return node.
+
+Step 3: Done
+Step 4: it failed, because we havent finish the get method
+Step 5: Done
+Step 6: it works, because we finished the get method
+Step 7: Done
+Step 8: it works, because our code is right
+Step 9: all the test case passes
+Step 10: everytime the current node changes position, check if it is equals to null
+Step 11: Done
+Step 12: it works, because we did it right.
+
+PART B
+Step 1: Done
+Step 2: Done
+Step 3: set the loop to stop at the element before position n
+Step 4: Done
+Step 5: Yes
+Step 6: Adding at n<0 or n>= size
+Step 7: Done
+Step 8: Yes
+Step 9: if n == 0, use addfirst
+Step 10: Yes
+
+PART C
+Step 1: the test fails
+Step 2: No, we dont know
+Step 3: #616 and #617
+Step 4: #620 and #621
+Step 5: 
+0 = 620
+1 = 627
+2 = 629
+3 = 631
+4 = 621
+Step 6: the one value of the element before it
+Step 7: Done
+Step 8: from the 2nd if statement and on
+Step 9: the first and the last are still there
+Step 10: we didnt change the reference of the first and last
+Step 11: Done
+Step 12: the removetail fails
+
+PART D
+DONE

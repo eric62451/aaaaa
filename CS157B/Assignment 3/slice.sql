@@ -1,0 +1,2 @@
+/*slice restrict to stores located in CANADA*/
+SELECT f.storeID, s.city, s.county, month, year, sum(sales_in_dollar) FROM sales f, store s, date d WHERE f.storeID = s.storeID AND f.dateID = d.dateID AND country = 'Canada' GROUP BY f.storeID, month;

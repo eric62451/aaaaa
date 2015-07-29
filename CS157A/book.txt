@@ -1,0 +1,52 @@
+0131873253	Database Systems: The Complete Book			2	2009	Pearson Prentice Hall		202.00	Hector Garcia-Molina
+	
+0470509481	Big Java: Compatible with Java 5, 6 and 7 		4	2010	Wiley				162.27	Cay Horstmann
+
+0321774094	Scala for the Impatient					1	2012	Addison-Wesley Professional	31.73	Cay Horstmann
+
+0538497815	Calculus						7	2012	Cengage Learning		238.57	James Stewart
+
+0440237688	The Giver						1	1993	Random House Children's Books	6.99	Lois Lowry
+
+0262033844	Introduction to Algorithms				3	2009	The MIT Press			78.3	Thomas Cormen
+
+0136108040	Computer Systems: A Programmer's Perspective		2 	2011	Pearson Prentice Hall		129.39	Randal Bryant
+
+0131103628	The C Programming Language				2	1988	Pearson Prentice Hall		50.06	Brian Kernighan
+
+
+0123850592	Computer Networks, Fifth Edition: A Systems Approach	5	2011	Morgan Kaufmann			86.91	Larry Peterson
+
+1890774782	Murach's Java Servlets and JSP				3	2014	Mike Murach & Associates	40.84	Joel Murach
+
+0321385179 	Linear Algebra and Its Applications			4	2011	Pearson Prentice Hall		158.74	David Lay
+
+0716749920	Vector Calculus						5	2003	Freeman				169.22	Jerrold Marsden
+
+049590578X	Public Speaking: The Evolving Art			2	2011	Cengage Learning		119.23	Stephanie Coopman
+
+0538453247	Microeconomics: An Intuitive Approach with Calculus	1	2011	Cengage Learning		242.51	Thomas Nechyba
+
+0495391328	Discrete Mathematics with Applications			4	2010	Cengage Learning		289.39	Susanna Epp
+
+
+
+
+
+
+113318779X	Introduction to the Theory of Computation		3	2012	Cengage Learning		194.01	Michael Sipser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0471744875	Object-Oriented Design and Patterns			2	2005	Wiley				99.4	Cay Horstmann

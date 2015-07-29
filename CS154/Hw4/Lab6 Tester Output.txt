@@ -1,0 +1,29 @@
+natRegEx test number from 0 to 100
+all numbers from 0 to 100 is true
+-5: false
+7.5: false
+0.6: false
+
+
+dateRegEx Test
+03/15/50: true
+300/455/99: false
+000/00/00: false
+03/01/05: true
+12/01/99: true
+11/11/11: true
+00/00/08: true
+10/05/12: true
+
+
+nameRegEx Test
+aa: true
+abcde: false
+a9: true
+9: false
+c9a7c5b: true
+cc5cc7: true
+b: true
+ac0: true
+a0b0c: true
+a00000ca: true

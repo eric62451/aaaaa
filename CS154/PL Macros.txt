@@ -1,0 +1,79 @@
+Exercises
+1.load z, x / y
+
+load z, 0
+load u, x
+loop x
+   load w, y<=u
+   load z, z + w
+   load u, u ~ y
+end
+
+
+
+2.load z, x % y
+
+load z, 0
+load a, x / y
+load a, a * y
+load z, x ~ a
+
+
+
+3.load z, x == y
+
+load z, 1
+load a, x ~ y
+load b, y ~ x
+load w, a + b
+loop w
+   load z, 0
+end
+
+
+
+4.load z, x != y
+
+load z, 1
+load w, x==y
+loop w
+   load z, 0
+end
+
+
+
+5.load z, x < y
+
+load z, 0
+load w, y
+loop x
+   load w, w~1
+end
+loop w
+   load z, 1
+end
+
+
+
+6.load z, x && y
+
+load z, 0
+load a, x * y
+loop a
+   load z, 1
+end
+
+
+
+7.load z, 2^x
+
+load z, 1
+load w, 2
+loop x
+   load z, z * w
+end
+
+
+
+
+

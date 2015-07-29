@@ -1,0 +1,524 @@
+run:
+Enter Ciphertext: PBFPVYFBQXZTYFPBFEQJHDXXQVAPTPQJKTOYQWIPBVWLXTOXBTFXQWAXBVCXQWAXFQJVWLEQNTOZQGGQLFXQWAKVWLXQWAEBIPBFXFQVXGTVJVWLBTPQWAEBFPBFHCVLXBQUFEVWLXGDPEQVPQGVPPBFTIXPFHXZHVFAGFOTHFEFBQUFTDHZBQPOTHXTYFTODXQHFTDPTOGHFQPBQWAQJJTODXQHFOQPWTBDHHIXQVAPBFZQHCFWPFHPBFIPBQWKFABVYYDZBOTHPBQPQJTQOTOGHFQAPBFEQJHDXXQVAVXEBQPEFZBVFOJIWFFACFCCFHQWAUVWFLQHGFXVAFXQHFUFHILTTAVWAFFAWTEVOITDHFHFQAITIXPFHXAFQHEFZQWGFLVWPTOFFA
+Letter Frequency: 
+A: 21
+B: 26
+C: 6
+D: 10
+E: 12
+F: 51
+G: 10
+H: 25
+I: 10
+J: 9
+K: 3
+L: 10
+M: 0
+N: 1
+O: 15
+P: 28
+Q: 42
+R: 0
+S: 0
+T: 27
+U: 4
+V: 24
+W: 22
+X: 28
+Y: 6
+Z: 8
+Choose a letter to replace: 
+P
+Input replacement: 
+T
+Guesses:
+P->T
+Current progress:
+T--T----------T------------T-T---------T---------------------------------------------------------T----------------T------T------------------T---T---TT-----T--------------------------T----------------T------T----------------T-----------T--------T--T---T----------------T--T------------T-----------------T-----------------------------------------------------------------------T-----------------T-----
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+B
+Input replacement: 
+F
+Guesses:
+P->T
+B->F
+Current progress:
+TF-T---F------TF-----------T-T---------TF-------F-------F--------------------------------------F-TF-------------F-T----F-TF------F----------T---T---TTF----T----------------F-------F-T----------------T------TF---------------T--F--------TF-------T--TF--TF-----F-----F---TF-T------------TF--------------F-T---F-------------------------------------------------------------------T-----------------T-----
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+F
+Input replacement: 
+E
+Guesses:
+P->T
+B->F
+F->E
+Current progress:
+TFET--EF-----ETFE----------T-T---------TF-------F-E-----F-------E----------------E-------------F-TFE-E----------F-T----FETFE-----F--E-------T---T---TTFE---TE-----E--E---E-EF--E----F-T------E------E--T----E-TF------------E--T--F--------TFE----E-TE-TFE-TF---E-F-----F---TF-T---------E--TFE-------------F-T-E-F-E----EE--E--E-------E----E---E---E-E---------EE----------E-E------TE---E---E----E---T--EE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+FIX
+Choose letter to fix, example F->C input "C": 
+F
+Input replacement: 
+H
+Guesses:
+P->T
+B->H
+F->E
+Current progress:
+THET--EH-----ETHE----------T-T---------TH-------H-E-----H-------E----------------E-------------H-THE-E----------H-T----HETHE-----H--E-------T---T---TTHE---TE-----E--E---E-EH--E----H-T------E------E--T----E-TH------------E--T--H--------THE----E-TE-THE-TH---E-H-----H---TH-T---------E--THE-------------H-T-E-H-E----EE--E--E-------E----E---E---E-E---------EE----------E-E------TE---E---E----E---T--EE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+V
+Input replacement: 
+I
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Current progress:
+THETI-EH-----ETHE--------I-T-T---------THI------H-E-----HI------E--I-------------E-----I-------H-THE-E-I---I-I--H-T----HETHE--I--H--E-I-----T--IT--ITTHE---TE----IE--E---E-EH--E----H-T------E------E--T----E-TH------------E--T--H------I-THE----E-TE-THE-TH---E-HI----H---TH-T---------E--THE--------I-I--H-T-E-HIE----EE--E--E-----I-E----E-I-E---E-E------I--EE----I-----E-E------TE---E---E----E-I-T--EE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+Y
+Input replacement: 
+M
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Current progress:
+THETIMEH----METHE--------I-T-T-----M---THI------H-E-----HI------E--I-------------E-----I-------H-THE-E-I---I-I--H-T----HETHE--I--H--E-I-----T--IT--ITTHE---TE----IE--E---E-EH--E----H-T-----ME------E--T----E-TH------------E--T--H------I-THE----E-TE-THE-TH---E-HIMM--H---TH-T---------E--THE--------I-I--H-T-E-HIE----EE--E--E-----I-E----E-I-E---E-E------I--EE----I-----E-E------TE---E---E----E-I-T--EE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+Z
+Input replacement: 
+C
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+Current progress:
+THETIMEH--C-METHE--------I-T-T-----M---THI------H-E-----HI------E--I-------C-----E-----I-------H-THE-E-I---I-I--H-T----HETHE--I--H--E-I-----T--IT--ITTHE---TE--C-IE--E---E-EH--E---CH-T-----ME------E--T----E-TH------------E--T--H------I-THEC---E-TE-THE-TH---E-HIMM-CH---TH-T---------E--THE--------I-I--H-T-ECHIE----EE--E--E-----I-E----E-I-E---E-E------I--EE----I-----E-E------TE---E---EC---E-I-T--EE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+T
+Input replacement: 
+O
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Current progress:
+THETIMEH--COMETHE--------I-TOT---O-M---THI---O--HOE-----HI------E--I-----O-C-----E-----I-------H-THE-E-I--OI-I--HOT----HETHE--I--H--E-I-----T--IT--ITTHEO--TE--C-IE--E-O-E-EH--EO--CH-T-O--OMEO-----EO-TO---E-TH------O-----E--T-OH------I-THEC---E-TE-THE-TH---E-HIMM-CH-O-TH-T--O--O---E--THE--------I-I--H-T-ECHIE----EE--E--E-----I-E----E-I-E---E-E---OO-I--EE--O-I--O--E-E---O--TE---E---EC---E-I-TO-EE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+Q
+Input replacement: 
+A
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+Current progress:
+THETIMEHA-COMETHE-A-----AI-TOTA--O-MA--THI---O--HOE-A---HI--A---EA-I---A-O-CA--A-E-A---I---A---H-THE-EAI--OI-I--HOTA---HETHE--I--HA-E-I-----T-AITA-ITTHEO--TE--C-IE--E-O-E-EHA-EO--CHAT-O--OMEO---A-EO-TO---EATHA--A--O---A-E-AT-OH-----AI-THECA--E-TE-THE-THA--E-HIMM-CH-O-THATA-OA-O---EA-THE-A-----AI-I--HAT-ECHIE----EE--E--E-A---I-E-A--E-I-E-A-E-E---OO-I--EE--O-I--O--E-EA--O--TE---EA--ECA--E-I-TO-EE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+X
+Input replacement: 
+S
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+Current progress:
+THETIMEHASCOMETHE-A---SSAI-TOTA--O-MA--THI--SO-SHOESA--SHI-SA--SEA-I---A-O-CA--A-ESA---I--SA---H-THESEAIS-OI-I--HOTA---HETHE--I-SHA-E-I--S--T-AITA-ITTHEO-STE-SC-IE--E-O-E-EHA-EO--CHAT-O-SOMEO--SA-EO-TO---EATHA--A--O--SA-E-AT-OH----SAI-THECA--E-TE-THE-THA--E-HIMM-CH-O-THATA-OA-O---EA-THE-A---SSAI-IS-HAT-ECHIE----EE--E--E-A---I-E-A--ESI-ESA-E-E---OO-I--EE--O-I--O--E-EA--O-STE-S-EA--ECA--E-I-TO-EE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+O
+Input replacement: 
+F
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+Current progress:
+THETIMEHASCOMETHE-A---SSAI-TOTA--OFMA--THI--SOFSHOESA--SHI-SA--SEA-I---A-OFCA--A-ESA---I--SA---H-THESEAIS-OI-I--HOTA---HETHE--I-SHA-E-I--S--T-AITA-ITTHEO-STE-SC-IE--EFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOF--EATHA--A--OF-SA-EFAT-OH----SAI-THECA--E-TE-THE-THA--E-HIMM-CHFO-THATA-OAFOF--EA-THE-A---SSAI-IS-HAT-ECHIEF---EE--E--E-A---I-E-A--ESI-ESA-E-E---OO-I--EE--O-IF-O--E-EA--O-STE-S-EA--ECA--E-I-TOFEE-
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+A
+Input replacement: 
+D
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+Current progress:
+THETIMEHASCOMETHE-A---SSAIDTOTA--OFMA--THI--SOFSHOESA-DSHI-SA-DSEA-I---A-OFCA--A-ESA-D-I--SA-D-H-THESEAIS-OI-I--HOTA-D-HETHE--I-SHA-E-I--S--T-AITA-ITTHEO-STE-SC-IED-EFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOF--EATHA-DA--OF-SA-EFAT-OH----SAIDTHECA--E-TE-THE-THA--EDHIMM-CHFO-THATA-OAFOF--EADTHE-A---SSAIDIS-HAT-ECHIEF---EED-E--E-A-D-I-E-A--ESIDESA-E-E---OODI-DEED-O-IF-O--E-EAD-O-STE-SDEA--ECA--E-I-TOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+J
+Input replacement: 
+L
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+Current progress:
+THETIMEHASCOMETHE-AL--SSAIDTOTAL-OFMA--THI--SOFSHOESA-DSHI-SA-DSEALI---A-OFCA--A-ESA-D-I--SA-D-H-THESEAIS-OILI--HOTA-D-HETHE--I-SHA-E-I--S--T-AITA-ITTHEO-STE-SC-IED-EFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOF--EATHA-DALLOF-SA-EFAT-OH----SAIDTHECA--E-TE-THE-THA--EDHIMM-CHFO-THATALOAFOF--EADTHE-AL--SSAIDIS-HAT-ECHIEFL--EED-E--E-A-D-I-E-A--ESIDESA-E-E---OODI-DEED-O-IF-O--E-EAD-O-STE-SDEA--ECA--E-I-TOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+K
+Input replacement: 
+K
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+Current progress:
+THETIMEHASCOMETHE-AL--SSAIDTOTALKOFMA--THI--SOFSHOESA-DSHI-SA-DSEALI---A-OFCA--A-ESA-DKI--SA-D-H-THESEAIS-OILI--HOTA-D-HETHE--I-SHA-E-I--S--T-AITA-ITTHEO-STE-SC-IED-EFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOF--EATHA-DALLOF-SA-EFAT-OH----SAIDTHECA--E-TE-THE-THA-KEDHIMM-CHFO-THATALOAFOF--EADTHE-AL--SSAIDIS-HAT-ECHIEFL--EED-E--E-A-D-I-E-A--ESIDESA-E-E---OODI-DEED-O-IF-O--E-EAD-O-STE-SDEA--ECA--E-I-TOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+W
+Input replacement: 
+N
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+Current progress:
+THETIMEHASCOMETHE-AL--SSAIDTOTALKOFMAN-THIN-SOFSHOESANDSHI-SANDSEALIN--A-OFCA--A-ESANDKIN-SAND-H-THESEAIS-OILIN-HOTAND-HETHE--I-SHA-E-IN-S--T-AITA-ITTHEO-STE-SC-IED-EFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOF--EATHANDALLOF-SA-EFATNOH----SAIDTHECA--ENTE-THE-THANKEDHIMM-CHFO-THATALOAFOF--EADTHE-AL--SSAIDIS-HAT-ECHIEFL-NEED-E--E-AND-INE-A--ESIDESA-E-E---OODINDEEDNO-IF-O--E-EAD-O-STE-SDEA--ECAN-E-INTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+I
+Input replacement: 
+Y
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+Current progress:
+THETIMEHASCOMETHE-AL--SSAIDTOTALKOFMANYTHIN-SOFSHOESANDSHI-SANDSEALIN--A-OFCA--A-ESANDKIN-SAND-HYTHESEAIS-OILIN-HOTAND-HETHE--I-SHA-E-IN-S--T-AITA-ITTHEOYSTE-SC-IED-EFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOF--EATHANDALLOF-SA-EFATNOH---YSAIDTHECA--ENTE-THEYTHANKEDHIMM-CHFO-THATALOAFOF--EADTHE-AL--SSAIDIS-HAT-ECHIEFLYNEED-E--E-AND-INE-A--ESIDESA-E-E-Y-OODINDEEDNO-IFYO--E-EADYOYSTE-SDEA--ECAN-E-INTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+L
+Input replacement: 
+G
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+L->G
+Current progress:
+THETIMEHASCOMETHE-AL--SSAIDTOTALKOFMANYTHINGSOFSHOESANDSHI-SANDSEALING-A-OFCA--AGESANDKINGSAND-HYTHESEAIS-OILINGHOTAND-HETHE--IGSHA-E-INGS--T-AITA-ITTHEOYSTE-SC-IED-EFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOF--EATHANDALLOF-SA-EFATNOH---YSAIDTHECA--ENTE-THEYTHANKEDHIMM-CHFO-THATALOAFOF--EADTHE-AL--SSAIDIS-HAT-ECHIEFLYNEED-E--E-AND-INEGA--ESIDESA-E-E-YGOODINDEEDNO-IFYO--E-EADYOYSTE-SDEA--ECAN-EGINTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+C
+Input replacement: 
+P
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+L->G
+C->P
+Current progress:
+THETIMEHASCOMETHE-AL--SSAIDTOTALKOFMANYTHINGSOFSHOESANDSHIPSANDSEALING-A-OFCA--AGESANDKINGSAND-HYTHESEAIS-OILINGHOTAND-HETHE-PIGSHA-E-INGS--T-AITA-ITTHEOYSTE-SC-IED-EFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOF--EATHANDALLOF-SA-EFATNOH---YSAIDTHECA-PENTE-THEYTHANKEDHIMM-CHFO-THATALOAFOF--EADTHE-AL--SSAIDIS-HAT-ECHIEFLYNEEDPEPPE-AND-INEGA--ESIDESA-E-E-YGOODINDEEDNO-IFYO--E-EADYOYSTE-SDEA--ECAN-EGINTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+G
+Input replacement: 
+B
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+L->G
+C->P
+G->B
+Current progress:
+THETIMEHASCOMETHE-AL--SSAIDTOTALKOFMANYTHINGSOFSHOESANDSHIPSANDSEALING-A-OFCABBAGESANDKINGSAND-HYTHESEAISBOILINGHOTAND-HETHE-PIGSHA-E-INGSB-T-AITABITTHEOYSTE-SC-IEDBEFO-E-EHA-EO--CHATFO-SOMEOF-SA-EO-TOFB-EATHANDALLOF-SA-EFATNOH---YSAIDTHECA-PENTE-THEYTHANKEDHIMM-CHFO-THATALOAFOFB-EADTHE-AL--SSAIDIS-HAT-ECHIEFLYNEEDPEPPE-AND-INEGA-BESIDESA-E-E-YGOODINDEEDNO-IFYO--E-EADYOYSTE-SDEA--ECANBEGINTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+E
+Input replacement: 
+W
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+L->G
+C->P
+G->B
+E->W
+Current progress:
+THETIMEHASCOMETHEWAL--SSAIDTOTALKOFMANYTHINGSOFSHOESANDSHIPSANDSEALINGWA-OFCABBAGESANDKINGSANDWHYTHESEAISBOILINGHOTANDWHETHE-PIGSHA-EWINGSB-TWAITABITTHEOYSTE-SC-IEDBEFO-EWEHA-EO--CHATFO-SOMEOF-SA-EO-TOFB-EATHANDALLOF-SA-EFATNOH---YSAIDTHECA-PENTE-THEYTHANKEDHIMM-CHFO-THATALOAFOFB-EADTHEWAL--SSAIDISWHATWECHIEFLYNEEDPEPPE-AND-INEGA-BESIDESA-E-E-YGOODINDEEDNOWIFYO--E-EADYOYSTE-SDEA-WECANBEGINTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+H
+Input replacement: 
+R
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+L->G
+C->P
+G->B
+E->W
+H->R
+Current progress:
+THETIMEHASCOMETHEWALR-SSAIDTOTALKOFMANYTHINGSOFSHOESANDSHIPSANDSEALINGWA-OFCABBAGESANDKINGSANDWHYTHESEAISBOILINGHOTANDWHETHERPIGSHA-EWINGSB-TWAITABITTHEOYSTERSCRIEDBEFOREWEHA-EO-RCHATFORSOMEOF-SAREO-TOFBREATHANDALLOF-SAREFATNOH-RRYSAIDTHECARPENTERTHEYTHANKEDHIMM-CHFORTHATALOAFOFBREADTHEWALR-SSAIDISWHATWECHIEFLYNEEDPEPPERAND-INEGARBESIDESARE-ERYGOODINDEEDNOWIFYO-REREADYOYSTERSDEARWECANBEGINTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+U
+Input replacement: 
+V
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+L->G
+C->P
+G->B
+E->W
+H->R
+U->V
+Current progress:
+THETIMEHASCOMETHEWALR-SSAIDTOTALKOFMANYTHINGSOFSHOESANDSHIPSANDSEALINGWA-OFCABBAGESANDKINGSANDWHYTHESEAISBOILINGHOTANDWHETHERPIGSHAVEWINGSB-TWAITABITTHEOYSTERSCRIEDBEFOREWEHAVEO-RCHATFORSOMEOF-SAREO-TOFBREATHANDALLOF-SAREFATNOH-RRYSAIDTHECARPENTERTHEYTHANKEDHIMM-CHFORTHATALOAFOFBREADTHEWALR-SSAIDISWHATWECHIEFLYNEEDPEPPERANDVINEGARBESIDESAREVERYGOODINDEEDNOWIFYO-REREADYOYSTERSDEARWECANBEGINTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+D
+Input replacement: 
+U
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+L->G
+C->P
+G->B
+E->W
+H->R
+U->V
+D->U
+Current progress:
+THETIMEHASCOMETHEWALRUSSAIDTOTALKOFMANYTHINGSOFSHOESANDSHIPSANDSEALINGWA-OFCABBAGESANDKINGSANDWHYTHESEAISBOILINGHOTANDWHETHERPIGSHAVEWINGSBUTWAITABITTHEOYSTERSCRIEDBEFOREWEHAVEOURCHATFORSOMEOFUSAREOUTOFBREATHANDALLOFUSAREFATNOHURRYSAIDTHECARPENTERTHEYTHANKEDHIMMUCHFORTHATALOAFOFBREADTHEWALRUSSAIDISWHATWECHIEFLYNEEDPEPPERANDVINEGARBESIDESAREVERYGOODINDEEDNOWIFYOUREREADYOYSTERSDEARWECANBEGINTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+REPLACE
+Choose a letter to replace: 
+N
+Input replacement: 
+X
+Guesses:
+P->T
+B->H
+F->E
+V->I
+Y->M
+Z->C
+T->O
+Q->A
+X->S
+O->F
+A->D
+J->L
+K->K
+W->N
+I->Y
+L->G
+C->P
+G->B
+E->W
+H->R
+U->V
+D->U
+N->X
+Current progress:
+THETIMEHASCOMETHEWALRUSSAIDTOTALKOFMANYTHINGSOFSHOESANDSHIPSANDSEALINGWAXOFCABBAGESANDKINGSANDWHYTHESEAISBOILINGHOTANDWHETHERPIGSHAVEWINGSBUTWAITABITTHEOYSTERSCRIEDBEFOREWEHAVEOURCHATFORSOMEOFUSAREOUTOFBREATHANDALLOFUSAREFATNOHURRYSAIDTHECARPENTERTHEYTHANKEDHIMMUCHFORTHATALOAFOFBREADTHEWALRUSSAIDISWHATWECHIEFLYNEEDPEPPERANDVINEGARBESIDESAREVERYGOODINDEEDNOWIFYOUREREADYOYSTERSDEARWECANBEGINTOFEED
+Input "replace" to replace another letter, "fix" to fix previous replacements and "quit" to exit: 
+quit

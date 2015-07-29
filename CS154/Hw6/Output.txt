@@ -1,0 +1,166 @@
+NUMBER parser test
+s = 29
+tree = <29>
+pending = 0
+s = 9
+tree = <9>
+pending = 0
+s = 0
+tree = <0>
+pending = 0
+s = -5
+tree = fail
+pending = 1
+s = 1.5
+tree = fail
+pending = 1
+
+
+OPERATOR parser test
+s = +
+tree = <+>
+pending = 0
+s = *
+tree = <*>
+pending = 0
+s = &&
+tree = <&&>
+pending = 0
+s = ||
+tree = <||>
+pending = 0
+s = !
+tree = <!>
+pending = 0
+s = -
+tree = fail
+pending = 1
+s = /
+tree = fail
+pending = 1
+
+
+BOOLE parser test
+s = true
+tree = <true>
+pending = 0
+s = false
+tree = <false>
+pending = 0
+s = flse
+tree = fail
+pending = 1
+s = truep
+tree = fail
+pending = 1
+s = TRUE
+tree = fail
+pending = 1
+
+
+NAME parser test
+s = winner1
+tree = <winner1>
+pending = 0
+s = n1n
+tree = <n1n>
+pending = 0
+s = 1st
+tree = fail
+pending = 1
+s = F1st
+tree = <F1st>
+pending = 0
+
+
+TERM parser test
+s = winner1
+tree = [ | <winner1>]
+pending = 0
+s = 3001
+tree = [ | [ | <3001>]]
+pending = 0
+s = 655z
+tree = fail
+pending = 1
+s = true
+tree = [ | <true>]
+pending = 0
+s = true1
+tree = [ | <true1>]
+pending = 0
+
+
+LIST1 parser test
+s = winner1 winner2 winner3
+tree = [ + [ | <winner3>]]
+pending = 0
+s = 1st eric tam
+tree = fail
+pending = 3
+s = winner1 2nd 3rd
+tree = fail
+pending = 2
+s = hi how true
+tree = [ + [ | <true>]]
+pending = 0
+
+
+LIST2 parser test
+s = winner1 winner2 winner3
+tree = [[ | <winner1>] ~ [ ? [[ | <winner2>] ~ [ ? [[ | <winner3>] ~ [ ? fail]]]]]]
+pending = 0
+s = 1st eric tam
+tree = fail
+pending = 3
+s = winner1 2nd 3rd
+tree = [[ | <winner1>] ~ [ ? fail]]
+pending = 2
+s = hi how true
+tree = [[ | <hi>] ~ [ ? [[ | <how>] ~ [ ? [[ | <true>] ~ [ ? fail]]]]]]
+pending = 0
+
+
+PRODUCT parser test
+s = name * 4 * 5 + true || a
+tree = [[ | <name>] ~ [ + [<||> ~ [ | <a>]]]]
+pending = 0
+s = 5 ! 5z + 6
+tree = fail
+pending = 3
+s = true && false
+tree = [[ | <true>] ~ [ + [<&&> ~ [ | <false>]]]]
+pending = 0
+s = 1z + true
+tree = fail
+pending = 3
+s = name - eric
+tree = fail
+pending = 2
+
+
+SUM parser test
+s = name * 4 * 5 + true || a
+tree = [ | [[ | <name>] ~ [ + [<||> ~ [ | <a>]]]]]
+pending = 0
+s = 5 ! 5z + 6
+tree = fail
+pending = 4
+s = true && false
+tree = [ | [[ | <true>] ~ [ + [<&&> ~ [ | <false>]]]]]
+pending = 0
+s = 1z + true
+tree = fail
+pending = 3
+s = name - eric
+tree = fail
+pending = 2
+s = name eric 5000 * 5
+tree = [ | [[ | <name>] ~ [ | [[ | <eric>] ~ [ | [[ | [ | <5000>]] ~ [ + [<*> ~ [ | [ | <5>]]]]]]]]]]
+pending = 0
+s = name eric tam is the best
+tree = fail
+pending = 0
+s = eric + numero + 1
+tree = [ | [[ | <eric>] ~ [ + [<+> ~ [ | [ | <1>]]]]]]
+pending = 0

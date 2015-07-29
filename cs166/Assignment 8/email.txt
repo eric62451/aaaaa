@@ -1,0 +1,25 @@
+From: "Sami Khuri" <sami.khuri@sjsu.edu>
+To: stamp@cs.sjsu.edu
+Subject: Student Complaint
+
+Dear Professor Mark Stamp,
+
+I have been informed that recently a student from your CS166 class has filed a complaint against you, claiming that you are unfairly grading his homework.
+I will need you to explain that during the meeting on April 1st, 3pm at my office.
+
+Regards,
+
+Sami Khuri
+
+--
+Sami Khuri, Professor and Chair
+Department of Computer Science
+San Jose State University
+One Washington Square
+San Jose, CA 95192-0249
+USA
+Tel:   (408) 924-5081
+Fax:   (408) 924-5062
+eMail: sami.khuri@sjsu.edu
+URL:   http://www.cs.sjsu.edu/faculty/khuri
+

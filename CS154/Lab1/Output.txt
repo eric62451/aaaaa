@@ -1,0 +1,65 @@
+a = [a, b, c, d]
+b = [d, e, f, g]
+c = [f, g]
+
+UNION TEST
+a union b = [a, b, c, d, e, f, g]
+a union c = [a, b, c, d, f, g]
+
+INTERSECT TEST
+a intersect b = [d]
+b intersect c = [f, g]
+
+DIFF TEST
+a diff b = [a, b, c]
+b diff c = [d, e]
+
+SUBSET TEST
+a subset b: false
+c subset b: true
+
+Filter and map test
+a = [0, 33, 3, 36, 6, 39, 9, 42, 12, 45, 15, 48, 18, 51, 21, 54, 24, 57, 27, 30]
+b = [0, 48, 18, 36, 6, 54, 24, 42, 12, 30]
+c = [0, 96, 48, 36, 84, 72, 24, 12, 108, 60]
+
+Power Set test
+Set: [1, 2, 3, 4, 5]
+[]
+[1]
+[2]
+[1, 2]
+[3]
+[1, 3]
+[4]
+[1, 4]
+[2, 3]
+[5]
+[1, 2, 3]
+[1, 5]
+[2, 4]
+[1, 2, 4]
+[2, 5]
+[3, 4]
+[1, 2, 5]
+[1, 3, 4]
+[3, 5]
+[1, 3, 5]
+[2, 3, 4]
+[4, 5]
+[1, 2, 3, 4]
+[1, 4, 5]
+[2, 3, 5]
+[1, 2, 3, 5]
+[2, 4, 5]
+[1, 2, 4, 5]
+[3, 4, 5]
+[1, 3, 4, 5]
+[2, 3, 4, 5]
+[1, 2, 3, 4, 5]
+
+Digit to unicode test
+1 = 0031
+9 = 0039
+3 = 0033
+integer out of range

@@ -1,0 +1,35 @@
+-> def square = lambda (x) x * x
+OK
+-> square (3)
+9.0
+-> def f2c = lambda (ft) {def c = 5 / 9; c * (ft - 32)}
+OK
+-> f2c(212)
+100.0
+-> c
+Undefined Identifier: c
+-> def addN = lambda (n) lambda (x) x + n
+OK
+-> def add6 = addN(6)
+OK
+-> add6(3)
+9.0
+-> (lambda (z) 2 * z) (3)
+6.0
+-> def fact = lambda (n) if (n==0) 1 else n * fact(n - 1)
+OK
+-> fact(5)
+120.0
+-> def abs = lambda(x) if (x<0) -1 * x else x
+OK
+-> abs(-9)
+9.0
+-> def small = {def delta = 0.00001; lambda(x) abs(x) < delta}
+OK
+-> small(-0.00000001)
+true
+-> small(0.001)
+false
+-> delta
+Undefined Identifier: delta
+-> 

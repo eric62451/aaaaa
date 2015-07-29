@@ -1,0 +1,125 @@
+Eric Tam (Driver) / Joshua Warner (Scribe)
+
+PART A
+Step 1: Done
+Step 2:
+   public void escape()
+   {
+       if(atExit()) return;
+   }
+Step 3: Done
+Step 4: Done
+Step 5: Done
+Step 6: Done
+Step 7:
+   public void escape()
+   {
+       if(atExit()) return;
+       turnRight();
+       if(!canMove()) turnLeft();
+       if(canMove()) move();
+       else turnLeft();   
+   }
+Step 8:
+   public void escape()
+   {
+       if(atExit()) return;
+       turnRight();
+       if(!canMove()) turnLeft();
+       if(canMove()) move();
+       else turnLeft();
+       escape();
+       
+   }
+Step 9: Done
+Step 10: Done
+
+PART B
+Step 1: Done
+Step 2:
+    public boolean escape2() {
+        {
+            if (atExit()) {
+                return true;
+            }
+            for (int i = 0; i < 4; i++) {
+                turnRight();
+                if (canMove()) {
+                    Robot cloned = clone();
+                    cloned.move();
+                    if (cloned.escape2()) {
+                        visited = cloned.getVisited();
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+    }
+Step 3: Done
+Step 4: Done
+Step 5: Done
+Step 6: Done
+
+PART C
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: Done
+Step 5: Done
+Step 6: Done
+Step 7: Done
+
+PART D
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: Done
+Step 5: Done
+Step 6: Done
+Step 7: Done
+Step 8: Done
+
+PART E
+Step 1:
+public static long fib(int n)
+   {
+Logger.getGlobal().info("Entering fib. n=" + n);
+       long result;
+      if (n <= 2)
+      {
+	 result = 1;
+      }
+      else
+      {
+	 long first = fib(n - 1);
+	 long second = fib(n - 2);
+	 result = first + second;
+      }
+       Logger.getGlobal().info("Exiting fib. return=" + result);
+      return result;
+   }
+}
+Step 2: Done
+Step 3: Done
+Step 4:
+    public static long fib(int n) {
+        if(!(knownFibonacciValues[n]==0)) return knownFibonacciValues[n];
+        Logger.getGlobal().info("Entering fib. n=" + n);
+        long result;
+        if (n <= 2) {
+            result = 1;
+        } else {
+            long first = fib(n - 1);
+            long second = fib(n - 2);
+            result = first + second;
+        }
+        Logger.getGlobal().info("Exiting fib. return=" + result);
+        knownFibonacciValues[n] = result;
+        return result;
+    }
+}
+Step 5: Done
+Step 6: Done
+Step 7: Done
+Step 8: Done

@@ -1,0 +1,51 @@
+Eric Tam (Driver) / Joshua Warner (Scribe)
+
+PART A
+Step 1: Done
+Step 2: 
+    private static void removeEntry(InOut in, AddressBook book) {
+        String name = in.nextLine("Enter name: ");
+        String key = in.nextLine("Enter key: ");
+        book.remove(name, key);
+    }
+
+Step 3: Done
+
+PART B
+Done
+
+PART C
+Step 1: Done
+Step 2: /home/admin
+Step 3: Done
+Step 4: /cygdrive/c/Documents\ and\ Settings/admin/Documents/NetBeansProjects/lab3/
+build  deptdir.txt  manifest.mf  nbbuild.xml  nbproject  src
+Step 5: Done
+Step 6: Done
+
+PART D
+Step 1:  /cygdrive/c/Documents\ and\ Settings/admin/Documents/NetBeansProjects/lab3/deptdir.txt
+Step 2: Done
+Step 3: Done
+Step 4: /cygdrive/c/Documents\ and\ Settings/admin/Documents/NetBeansProjects/lab3/deptdir.txt ./deptdir.original.txt
+
+PART E
+Step 1: Done
+Step 2: Done
+Step 3: up and enter
+
+PART F
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: admin@admin-PC ~
+Step 5: Done
+Step 6: Done
+Step 7: Done
+
+PART G
+Step 1: Done
+Step 2: done
+Step 3: done
+Step 4: build  build.xml  manifest.mf  nbproject  src
+Step 5: Done

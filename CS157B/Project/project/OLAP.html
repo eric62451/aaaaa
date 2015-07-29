@@ -1,0 +1,535 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<title>CS157B Project</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery-1.11.3.js"></script>
+</head>
+<body>
+<h1 class="center">Team ACE OLAP Operations Project</h1>
+<div id="Menu">
+  <ul>
+    <div class="plainbutton center"> 
+      
+      <!-- trigger button --> 
+      <a>
+      <button onclick='myCall();'>Base Table</button>
+      </a> </div>
+    <div class="dropdown center"> 
+      
+      <!-- trigger button -->
+      <button>Tables</button>
+      <ul class="dropdown-menu">
+        <li><a href="#account" onclick='showAccount()'>Account</a></li>
+        <li><a href="#branch" onclick='showBranch()'>Branch</a></li>
+        <li><a href="#month" onclick='showMonth()'>Month</a></li>
+        <li><a href="#product" onclick='showProduct()'>Product</a></li>
+        <li><a href="#facts" onclick='showFact()'>Household fact</a></li>
+      </ul>
+    </div>
+    <div class="dropdown center"> 
+      
+      <!-- trigger button -->
+      <button>Roll-up</button>
+      <ul class="dropdown-menu">
+        <li><a href="#account" onclick='rollUpAccount()'>Account</a></li>
+        <li><a href="#branch" onclick='rollUpBranch()'>Branch</a></li>
+        <li><a href="#month" onclick='rollUpMonth()'>Month</a></li>
+        <li><a href="#product" onclick='rollUpProduct()'>Product</a></li>
+      </ul>
+    </div>
+    <div class="dropdown center"> 
+      
+      <!-- trigger button -->
+      <button>Drill-down</button>
+      <ul class="dropdown-menu">
+        <li><a href="#account" onclick='drillDownAccount()'>Account</a></li>
+        <li><a href="#branch" onclick='drillDownBranch()'>Branch</a></li>
+        <li><a href="#month" onclick='drillDownMonth()'>Month</a></li>
+        <li><a href="#product" onclick='drillDownProduct()'>Product</a></li>
+      </ul>
+    </div>
+    <div class="plainbutton center"> 
+      
+      <!-- trigger button --> 
+      <a>
+      <button id="slice">Slice</button>
+      </a> </div>
+    <div class="plainbutton center"> 
+      
+      <!-- trigger button --> 
+      <a>
+      <button id="dice">Dice</button>
+      </a> </div>
+  </ul>
+</div>
+<div id="userInputs"> 
+  
+  <!--Content for performing slice operation-->
+  <div id="sliceInput" class="hidden">
+    <div id="sliceInputs">
+      <label for="dimension">Dimension: </label>
+      <select id="slicedimension">
+        <option>Account</option>
+        <option>Branch</option>
+        <option>Month</option>
+        <option>Product</option>
+      </select>
+      <br>
+      <label for="sliceValue">Value: </label>
+      <input type="text" placeholder="Value..." id="sliceValue" class="textEntry" name="slice_input" />
+      <br/>
+      <button id="performSlice" class="punch" onclick='slice()'>Perform Slice</button>
+    </div>
+  </div>
+  <div id="diceInput" class="hidden center">
+    <div id="values" class="vls">
+		<p>Only Select Three</p>
+      <label for="Dimmension1">Account</label>
+      <br>
+      <label for="col1Input1">Values: </label>
+      <input type="text" id="dim1Input1" class="textEntry" placeholder="Value..." />
+      OR
+      <input type="text" id="dim1Input2" class="textEntry" placeholder="Value..." />
+      OR
+      <input type="text" id="dim1Input3" class="textEntry" placeholder="Value..." />
+      
+    </div>
+    <div id="values1" class="vls">
+      <label for="Dimmension2">Branch</label>
+      <br/>
+      <label for="colInput2">Values: </label>
+      <input type="text" id="dim2Input1" class="textEntry" placeholder="Value..." />
+      OR
+      <input type="text" id="dim2Input2" class="textEntry" placeholder="Value..." />
+      OR
+      <input type="text" id="dim2Input3" class="textEntry" placeholder="Value..." />
+      <!--<button class="OR primaryButton" id="or2">OR</button></span>--> 
+      
+    </div>
+    <div id="values2" class="vls">
+      <label for="Dimmension3">Month</label>
+      <br/>
+      <label for="col3Input3">Values: </label>
+      <input type="text" id="dim3Input1" class="textEntry" placeholder="Value..." />
+      OR
+      <input type="text" id="dim3Input2" class="textEntry" placeholder="Value..." />
+      OR
+      <input type="text" id="dim3Input3" class="textEntry" placeholder="Value..." />
+      <!--<button class="OR primaryButton" id="or3">OR</button></span>--> 
+      
+    </div>
+	
+	<div id="values2" class="vls">
+      <label for="Dimmension4">Product</label>
+      <br/>
+      <label for="col4Input4">Values: </label>
+      <input type="text" id="dim4Input1" class="textEntry" placeholder="Value..." />
+      OR
+      <input type="text" id="dim4Input2" class="textEntry" placeholder="Value..." />
+      OR
+      <input type="text" id="dim4Input3" class="textEntry" placeholder="Value..." />
+      <!--<button class="OR primaryButton" id="or3">OR</button></span>--> 
+      
+    </div>
+    <button class="punch" id="performDice" onclick='dice()'>Perform Dice</button>
+  </div>
+</div>
+
+<div id='basetableresult'>
+</div>
+</body>
+<Script type="text/javascript">
+//drill down and roll up indexs
+var accountLevel = 2;
+var productLevel = 2;
+var monthLevel = 1;
+var branchLevel = 3;
+        $("#slice").click(function(){
+            $("#diceInput").hide();
+            $("#sliceInput").show();
+        });
+
+        $("#dice").click(function(){
+            $("#sliceInput").hide();
+            $("#diceInput").show();
+        });
+		function hideall()
+{
+    $("#sliceInput").hide();
+            $("#diceInput").hide();
+}
+
+function myCall() {
+		hideall();
+		
+		accountLevel = 2;
+		productLevel = 2;
+		monthLevel = 1;
+		branchLevel = 3;
+		
+		var request = $.ajax({
+			url: "basetable.php",
+			type: "GET",			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	}
+	
+function showAccount() {
+		hideall();
+		var request = $.ajax({
+			url: "accountTable.php",
+			type: "GET",			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	}
+
+function showBranch() {
+		hideall();
+		var request = $.ajax({
+			url: "branchTable.php",
+			type: "GET",			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	}
+	
+function showMonth() {
+		hideall();
+		var request = $.ajax({
+			url: "monthTable.php",
+			type: "GET",			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	}
+	
+function showProduct() {
+		hideall();
+		var request = $.ajax({
+			url: "productTable.php",
+			type: "GET",			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	}
+	
+function showFact() {
+		hideall();
+		var request = $.ajax({
+			url: "factTable.php",
+			type: "GET",			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	}
+	
+function drillDownAccount() {
+		hideall();
+		if(accountLevel == 1)
+			{window.alert("Already at most specific level of account"); return;}
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:"account"};
+		
+		var request = $.ajax({
+			url: "drillDown.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+		
+		accountLevel -= 1;
+	}
+	
+function drillDownBranch() {
+		hideall();
+		if(branchLevel == 1)
+			{window.alert("Already at most specific level of Branch"); return;}
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:"branch"};
+		
+		var request = $.ajax({
+			url: "drillDown.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+		
+		branchLevel -= 1;
+	}
+	
+function drillDownProduct() {
+		hideall();
+		if(productLevel == 1)
+			{window.alert("Already at most specific level of Product"); return;}
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:"product"};
+		
+		var request = $.ajax({
+			url: "drillDown.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+		
+		productLevel -= 1;
+	}
+	
+function drillDownMonth() {
+		hideall();
+		if(monthLevel == 1)
+			{window.alert("Already at most specific level of Month"); return;}
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:"month"};
+		
+		var request = $.ajax({
+			url: "drillDown.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+		
+		monthLevel -= 1;
+	}
+	
+function rollUpAccount() {
+		hideall();
+		if(accountLevel == 3)
+			{window.alert("Already at most General level of account"); return;}
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:"account"};
+		
+		var request = $.ajax({
+			url: "rollUp.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+		
+		accountLevel += 1;
+	}
+
+function rollUpBranch() {
+		hideall();
+		if(branchLevel == 3)
+			{window.alert("Already at most General level of Branch"); return;}
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:"branch"};
+		
+		var request = $.ajax({
+			url: "rollUp.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+		
+		branchLevel += 1;
+	}
+	
+function rollUpMonth() {
+		hideall();
+		if(monthLevel == 3)
+			{window.alert("Already at most General level of Month"); return;}
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:"month"};
+		
+		var request = $.ajax({
+			url: "rollUp.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+		
+		monthLevel += 1;
+	}
+	
+function rollUpProduct() {
+		hideall();
+		if(productLevel == 3)
+			{window.alert("Already at most General level of Product"); return;}
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:"product"};
+		
+		var request = $.ajax({
+			url: "rollUp.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+		
+		productLevel += 1;
+	}
+	
+function slice() {
+		hideall();
+		
+		var dimension = $('#slicedimension').val().toLowerCase();
+		var docinput = $('#sliceValue').val();
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel), name:dimension, input:docinput};
+		
+		var request = $.ajax({
+			url: "slice.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	}
+	
+function dice() {
+		hideall();
+		
+		var dimension11 = $('#dim1Input1').val();
+		var dimension12 = $('#dim1Input2').val();
+		var dimension13 = $('#dim1Input3').val();
+		
+		var dimension21 = $('#dim2Input1').val();
+		var dimension22 = $('#dim2Input2').val();
+		var dimension23 = $('#dim2Input3').val();
+		
+		var dimension31 = $('#dim3Input1').val();
+		var dimension32 = $('#dim3Input2').val();
+		var dimension33 = $('#dim3Input3').val();
+		
+		var dimension41 = $('#dim4Input1').val();
+		var dimension42 = $('#dim4Input2').val();
+		var dimension43 = $('#dim4Input3').val();
+			
+		formData = {accountlevel:String(accountLevel), branchlevel:String(branchLevel), productlevel:String(productLevel), monthlevel:String(monthLevel),
+		input11:dimension11, input12:dimension12, input13:dimension13, input21:dimension21, input22:dimension22, input23:dimension23, input31:dimension31, input32:dimension32, input33:dimension33, input41:dimension41, input42:dimension42, input43:dimension43};
+		
+		var request = $.ajax({
+			url: "dice.php",
+			type: "POST",
+			data : formData,			
+			dataType: "html"
+		});
+
+		request.done(function(msg) {
+			$("#basetableresult").html(msg);			
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			alert( "Request failed: " + textStatus );
+		});
+	}
+	
+
+</script>
+</html>

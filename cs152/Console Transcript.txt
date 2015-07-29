@@ -1,0 +1,25 @@
+-> div 1 1
+1.0
+-> div 1 0
+Infinity
+-> div 0 0
+NaN
+-> add 5 5
+10.0
+-> add -5 -6
+-11.0
+-> sub 0 0
+0.0
+-> sub 9 5
+4.0
+-> sub 4 10
+-6.0
+-> mul 10 10
+100.0
+-> sum 4 4
+Unrecognized command: sum
+-> add 10 a
+invalid argument: a
+-> sub 10 a
+invalid argument: a
+-> 

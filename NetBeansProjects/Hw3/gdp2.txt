@@ -1,0 +1,9 @@
+country GDP(millions of US$) GDP(per capita) population date
+Saudi Arabia $676,700 $24,000 26,534,504 NA
+Turks and Caicos Islands $216,000,000 $11,500 46,335 July 2011 est.
+United Arab Emirates $260,800 $48,500 5,314,317 NA 
+Cote d'Ivoire $35,600,000,000 $1,600 21,952,093 NA 
+
+
+
+

@@ -1,0 +1,158 @@
+SET A = {1,2,3,4,5} SET B = {4,5,6,7,8,9,10}
+
+UNION Test
+memABUnion(0) = false
+memABUnion(1) = true
+memABUnion(2) = true
+memABUnion(3) = true
+memABUnion(4) = true
+memABUnion(5) = true
+memABUnion(6) = true
+memABUnion(7) = true
+memABUnion(8) = true
+memABUnion(9) = true
+memABUnion(10) = true
+memABUnion(11) = false
+memABUnion(12) = false
+
+INTERSECT Test
+memABIntersect(0) = false
+memABIntersect(1) = false
+memABIntersect(2) = false
+memABIntersect(3) = false
+memABIntersect(4) = true
+memABIntersect(5) = true
+memABIntersect(6) = false
+memABIntersect(7) = false
+memABIntersect(8) = false
+memABIntersect(9) = false
+memABIntersect(10) = false
+memABIntersect(11) = false
+memABIntersect(12) = false
+
+DIFFER Test
+memABDiff(0) = false
+memABDiff(1) = true
+memABDiff(2) = true
+memABDiff(3) = true
+memABDiff(4) = false
+memABDiff(5) = false
+memABDiff(6) = false
+memABDiff(7) = false
+memABDiff(8) = false
+memABDiff(9) = false
+memABDiff(10) = false
+memABDiff(11) = false
+memABDiff(12) = false
+
+Cartesian Test
+memABCartesian(0,3) = false
+memABCartesian(0,4) = false
+memABCartesian(0,5) = false
+memABCartesian(0,6) = false
+memABCartesian(0,7) = false
+memABCartesian(0,8) = false
+memABCartesian(0,9) = false
+memABCartesian(0,10) = false
+memABCartesian(0,11) = false
+memABCartesian(1,3) = false
+memABCartesian(1,4) = true
+memABCartesian(1,5) = true
+memABCartesian(1,6) = true
+memABCartesian(1,7) = true
+memABCartesian(1,8) = true
+memABCartesian(1,9) = true
+memABCartesian(1,10) = true
+memABCartesian(1,11) = false
+memABCartesian(2,3) = false
+memABCartesian(2,4) = true
+memABCartesian(2,5) = true
+memABCartesian(2,6) = true
+memABCartesian(2,7) = true
+memABCartesian(2,8) = true
+memABCartesian(2,9) = true
+memABCartesian(2,10) = true
+memABCartesian(2,11) = false
+memABCartesian(3,3) = false
+memABCartesian(3,4) = true
+memABCartesian(3,5) = true
+memABCartesian(3,6) = true
+memABCartesian(3,7) = true
+memABCartesian(3,8) = true
+memABCartesian(3,9) = true
+memABCartesian(3,10) = true
+memABCartesian(3,11) = false
+memABCartesian(4,3) = false
+memABCartesian(4,4) = true
+memABCartesian(4,5) = true
+memABCartesian(4,6) = true
+memABCartesian(4,7) = true
+memABCartesian(4,8) = true
+memABCartesian(4,9) = true
+memABCartesian(4,10) = true
+memABCartesian(4,11) = false
+memABCartesian(5,3) = false
+memABCartesian(5,4) = true
+memABCartesian(5,5) = true
+memABCartesian(5,6) = true
+memABCartesian(5,7) = true
+memABCartesian(5,8) = true
+memABCartesian(5,9) = true
+memABCartesian(5,10) = true
+memABCartesian(5,11) = false
+memABCartesian(6,3) = false
+memABCartesian(6,4) = false
+memABCartesian(6,5) = false
+memABCartesian(6,6) = false
+memABCartesian(6,7) = false
+memABCartesian(6,8) = false
+memABCartesian(6,9) = false
+memABCartesian(6,10) = false
+memABCartesian(6,11) = false
+
+Enum SET A = {0,2,4,6,8,........} SET B = {0,3,6,9,12,.......}
+
+UNION Test
+enumABUnion(0) = 0
+enumABUnion(1) = 0
+enumABUnion(2) = 2
+enumABUnion(3) = 3
+enumABUnion(4) = 4
+enumABUnion(5) = 6
+enumABUnion(6) = 6
+enumABUnion(7) = 9
+enumABUnion(8) = 8
+enumABUnion(9) = 12
+enumABUnion(10) = 10
+enumABUnion(11) = 15
+enumABUnion(12) = 12
+
+INTERSERCT Test
+enumABIntersect(0) = 0
+enumABIntersect(1) = 0
+enumABIntersect(2) = 6
+enumABIntersect(3) = 12
+enumABIntersect(4) = 18
+enumABIntersect(5) = 24
+enumABIntersect(6) = 30
+enumABIntersect(7) = 36
+enumABIntersect(8) = 42
+enumABIntersect(9) = 48
+enumABIntersect(10) = 54
+enumABIntersect(11) = 60
+enumABIntersect(12) = 66
+
+Cartesian Test
+enumABCartesian(0) = (1,1)
+enumABCartesian(1) = (2,1)
+enumABCartesian(2) = (1,2)
+enumABCartesian(3) = (1,3)
+enumABCartesian(4) = (2,2)
+enumABCartesian(5) = (3,1)
+enumABCartesian(6) = (4,1)
+enumABCartesian(7) = (3,2)
+enumABCartesian(8) = (2,3)
+enumABCartesian(9) = (1,4)
+enumABCartesian(10) = (1,5)
+enumABCartesian(11) = (2,4)
+enumABCartesian(12) = (3,3)

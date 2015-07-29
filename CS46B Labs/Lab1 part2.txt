@@ -1,0 +1,208 @@
+Eric Tam (Driver) / Benjamin Ko (Scribe)
+
+Part G
+Step 1. Done
+Step 2. Done
+Step 3. Done
+Step 4. Done
+Step 5. Done
+Step 6. Done
+Step 7. 
+	public int compareTo(Object o) {
+        Item other = (Item) o;
+        int compare = name.compareTo(other.name);
+        if (compare == 0) {
+            compare = key.compareTo(other.key);
+        }
+        if (compare == 0) {
+            value.compareTo(other.value);
+        }
+        return compare;
+    }
+
+Step 8. Done
+Step 9. Done
+
+Part H
+Step 1. Done
+Step 2. for Item.java class
+Step 3.
+
+public class Item implements Comparable {
+
+    private String name;
+    private String key;
+    private String value;
+
+    public Item(String name, String key, String value) {
+        this.name = name;
+        this.key = key;
+        this.value = value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int compareTo(Object o) {
+        Item other = (Item) o;
+        int compare = name.compareTo(other.name);
+        if (compare == 0) {
+            compare = key.compareTo(other.key);
+        }
+        if (compare == 0) {
+            value.compareTo(other.value);
+        }
+        return compare;
+    }
+
+    @Override
+    public String toString() {
+        return this.getName();
+    }
+
+
+
+
+
+}
+Step 4.
+Step 5. 
+     /**
+     * Returns True if the param is contained in the items array
+     * @param Item that want to check if it is contained in items array
+     * @return true if it is contained, false if not
+     */
+
+Step 6. 
+false
+Expected: true
+false
+Expected: false
+
+Step 7. The items are ("Fred", "wife", "wilma") and ("Dino", "food", "meat". in the first iteration of the loop, it does not return true because the first item does not equals to the one we input, in the 2nd iteration the 2nd item is equals to the item we input but does not return true.
+
+Step 8. equals method not working as expected
+Step 9. Item.java class
+Step 10. 
+
+public class Item implements Comparable {
+
+    private String name;
+    private String key;
+    private String value;
+
+    public Item(String name, String key, String value) {
+        this.name = name;
+        this.key = key;
+        this.value = value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int compareTo(Object o) {
+        Item other = (Item) o;
+        int compare = name.compareTo(other.name);
+        if (compare == 0) {
+            compare = key.compareTo(other.key);
+        }
+        if (compare == 0) {
+            value.compareTo(other.value);
+        }
+        return compare;
+    }
+
+    @Override
+    public String toString() {
+        return this.getName();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Item other = (Item) obj;
+        if(!name.equals(other.name)) return false;
+        if(!key.equals(other.key)) return false;
+        if(!value.equals(other.value)) return false;
+        return true;
+    }
+
+}
+
+Step 11. Done
+
+Part I
+Step 1. Done
+Step 2. Done
+Step 3. Done
+
+Step 4.public static Comparable smallestAfter(Comparable[] values, Comparable after) {
+        int location = 0;
+        for (int i = 0; i < values.length; i++) {
+            if (values[i].compareTo(after) > 0) {
+                if (values[location].compareTo(after) > 0) {
+                    if (values[location].compareTo(values[i]) > 0) {
+                        location = i;
+                    }
+                } else {
+                    location = i;
+                }
+            }
+        }
+        return values[location];
+    }
+
+Step 5. Done
+
+Part J
+Step 1. System.out.println(book.getNext(book.getFirst()));
+step 2. Horstmann email
+Step 3. System.out.println(book.getNext(book.getNext(book.getFirst())));
+Step 4. Done
+Step 5.
+ArrayListAddressBook b = (ArrayListAddressBook) book;
+ArrayList<Item> array = b.getItems();
+Item other = book.getFirst();
+for(int i=0; i<array.size();i++)
+       {
+           System.out.println(book.getNext(other));
+           other = book.getNext(other);
+       }
+
+Step 6. Done
+Step 7. Done
+Step 8. Done
+Step 9. 
+    public void printSorted(Comparable[] values)
+    {
+        Comparable item = smallest(values);
+        for(int i = 0; i<values.length;i++)
+        System.out.println(smallestAfter(values,item));
+        item = smallestAfter(values,item);
+    }
+Step 10. 

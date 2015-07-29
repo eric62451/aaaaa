@@ -1,0 +1,1830 @@
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		10.73		7.98		1
+B		23.98		3.09		4
+C		24.93		2.56		2
+D		64.49		5.18		4
+E		1.71		6.45		3
+F		49.42		2.23		3
+G		6.37		7.26		1
+H		12.03		9.29		2
+I		78.27		3.59		3
+J		66.97		7.11		2
+K		59.46		1.85		3
+L		80.29		7.24		1
+M		25.92		8.49		1
+O		75.27		6.53		1
+N		51.92		7.06		4
+P		68.86		7.05		4
+Q		88.43		1.07		2
+R		74.74		9.73		3
+S		92.92		6.63		2
+T		18.68		6.34		1
+U		18.44		6.43		4
+V		80.17		1.72		3
+W		86.14		3.53		3
+X		48.87		2.13		1
+Y		36.27		7.02		1
+================================================= 
+Results of FCFS run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		25.00		17.00
+B		53.00		49.00
+C		56.00		53.00
+D		95.00		89.00
+E		9.00		2.00
+F		79.00		76.00
+G		17.00		9.00
+H		35.00		25.00
+I		132.00		128.00
+J		103.00		95.00
+K		89.00		87.00
+L		140.00		132.00
+M		65.00		56.00
+N		87.00		79.00
+O		128.00		121.00
+P		111.00		103.00
+Q		148.00		146.00
+R		121.00		111.00
+S		155.00		148.00
+T		42.00		35.00
+U		49.00		42.00
+V		142.00		140.00
+W		146.00		142.00
+X		76.00		73.00
+Y		73.00		65.00
+============================================ 
+Average wait: 80.92 quanta | Average turnaround: 87.04 quanta | Throughput: 0.9870968 runs/quantum | Average response:31.10877
+Timeline: [ ][ ]EEEEEEEGGGGGGGGAAAAAAAAHHHHHHHHHHTTTTTTTUUUUUUUBBBBCCCMMMMMMMMMYYYYYYYYXXXFFFNNNNNNNNKKDDDDDDJJJJJJJJPPPPPPPPRRRRRRRRRROOOOOOOIIIILLLLLLLLVVWWWWQQSSSSSSS
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		77.26		8.32		1
+B		24.40		2.99		2
+C		83.10		7.12		4
+D		61.50		9.80		4
+E		69.53		4.36		4
+F		93.05		9.69		2
+G		98.93		9.86		1
+H		4.11		6.18		2
+I		57.61		5.13		3
+J		98.68		2.13		2
+K		70.37		1.91		1
+L		86.39		3.69		1
+M		66.63		6.31		3
+O		79.52		9.83		2
+N		17.68		2.78		1
+P		73.54		5.32		3
+Q		1.92		9.52		3
+R		65.84		3.63		2
+S		74.09		2.23		1
+T		18.22		7.89		2
+U		49.23		3.61		3
+V		10.02		9.59		2
+W		9.31		8.43		1
+X		0.09		9.77		4
+Y		87.99		3.49		2
+================================================= 
+Results of SRT run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		126.00		117.00
+B		28.00		25.00
+C		117.00		109.00
+D		146.00		136.00
+E		77.00		70.00
+F		136.00		126.00
+G		166.00		156.00
+H		18.00		11.00
+I		64.00		58.00
+J		102.00		99.00
+K		73.00		71.00
+L		99.00		95.00
+M		109.00		102.00
+N		21.00		18.00
+O		156.00		146.00
+P		91.00		85.00
+Q		51.00		41.00
+R		70.00		66.00
+S		80.00		77.00
+T		32.00		21.00
+U		55.00		51.00
+V		85.00		55.00
+W		41.00		32.00
+X		11.00		1.00
+Y		95.00		91.00
+============================================ 
+Average wait: 74.36 quanta | Average turnaround: 81.96 quanta | Throughput: 0.9939759 runs/quantum | Average response:19.20049
+Timeline: [ ]XXXXXXXXXXHHHHHHHNNNTTTTBBBTTTTWWWWWWWWWQQQQQQQQQQUUUUVVVIIIIIIVVRRRREKKEEEESSSVVVVVPPPPPPYYYYLLLLJJJMMMMMMMCCCCCCCCAAAAAAAAAFFFFFFFFFFDDDDDDDDDDOOOOOOOOOOGGGGGGGGGG
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		6.60		6.54		1
+B		84.08		2.65		1
+C		87.66		4.02		2
+D		65.54		8.93		3
+E		32.40		8.68		2
+F		55.51		7.00		3
+G		10.01		2.10		2
+H		11.20		6.07		3
+I		30.88		7.65		4
+J		11.28		4.25		2
+K		8.53		8.34		1
+L		35.79		4.66		1
+M		95.73		7.76		2
+O		41.33		9.63		3
+N		44.21		3.45		2
+P		35.37		6.19		3
+Q		41.74		9.42		2
+R		9.24		2.64		4
+S		1.49		2.76		1
+T		57.22		2.98		3
+U		65.72		1.19		3
+V		23.66		7.14		1
+W		46.09		3.17		2
+X		44.90		3.08		2
+Y		88.88		8.52		4
+================================================= 
+Results of HPF run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		14.00		7.00
+B		134.00		131.00
+C		139.00		134.00
+D		129.00		120.00
+E		66.00		57.00
+F		117.00		110.00
+G		29.00		23.00
+H		36.00		29.00
+I		57.00		49.00
+J		41.00		36.00
+K		23.00		14.00
+L		71.00		66.00
+M		156.00		148.00
+N		102.00		98.00
+O		88.00		78.00
+P		78.00		71.00
+Q		98.00		88.00
+R		28.00		25.00
+S		5.00		2.00
+T		120.00		117.00
+U		131.00		129.00
+V		49.00		41.00
+W		110.00		106.00
+X		106.00		102.00
+Y		148.00		139.00
+============================================ 
+Average wait: 76.8 quanta | Average turnaround: 83.0 quanta | Throughput: 0.974359 runs/quantum | Average response:35.39827
+Timeline: [ ][ ]SSS[ ][ ]AAAAAAAKKKKKKKKKGGRRRGHHHHHHHJJJJJVVVVVVVVIIIIIIIIEEEEEEEEELLLLLPPPPPPPOOOOOOOOOOQQQQQQQQQQNNNNXXXXWWWWFFFFFFFTTTDDDDDDDDDUUBBBCCCCCYYYYYYYYYMMMMMMMM
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		97.38		9.45		3
+B		36.19		6.00		1
+C		75.23		3.41		2
+D		82.13		8.64		4
+E		55.53		3.33		3
+F		53.98		4.05		1
+G		26.99		9.21		2
+H		78.28		1.09		3
+I		95.48		7.57		2
+J		24.76		2.06		3
+K		85.05		9.83		3
+L		36.34		2.83		2
+M		93.50		7.29		2
+O		71.31		9.21		3
+N		92.03		7.58		4
+P		5.63		7.07		4
+Q		13.05		3.70		3
+R		61.31		3.49		1
+S		73.12		9.80		2
+T		41.88		6.79		1
+U		44.89		5.34		3
+V		9.78		4.30		3
+W		45.45		1.53		2
+X		24.67		1.07		1
+Y		71.82		1.84		4
+================================================= 
+Results of HPF-NP run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		159.00		149.00
+B		47.00		40.00
+C		104.00		100.00
+D		115.00		106.00
+E		74.00		70.00
+F		70.00		65.00
+G		37.00		27.00
+H		106.00		104.00
+I		149.00		141.00
+J		40.00		37.00
+K		125.00		115.00
+L		50.00		47.00
+M		141.00		133.00
+N		133.00		125.00
+O		88.00		78.00
+P		14.00		6.00
+Q		23.00		19.00
+R		78.00		74.00
+S		100.00		90.00
+T		57.00		50.00
+U		63.00		57.00
+V		19.00		14.00
+W		65.00		63.00
+X		27.00		25.00
+Y		90.00		88.00
+============================================ 
+Average wait: 72.92 quanta | Average turnaround: 78.96 quanta | Throughput: 0.9496855 runs/quantum | Average response:17.08844
+Timeline: [ ][ ][ ][ ][ ][ ]PPPPPPPPVVVVVQQQQ[ ][ ]XXGGGGGGGGGGJJJBBBBBBBLLLTTTTTTTUUUUUUWWFFFFFEEEERRRROOOOOOOOOOYYSSSSSSSSSSCCCCHHDDDDDDDDDKKKKKKKKKKNNNNNNNNMMMMMMMMIIIIIIIIAAAAAAAAAA
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		24.85		6.98		2
+B		21.02		1.75		1
+C		33.62		6.44		2
+D		36.40		7.43		4
+E		25.17		8.79		3
+F		34.50		9.60		3
+G		82.50		8.92		1
+H		59.19		2.95		1
+I		65.95		6.36		3
+J		22.79		4.48		2
+K		21.94		1.50		3
+L		20.59		4.24		3
+M		6.49		2.46		3
+O		55.79		4.13		3
+N		66.73		9.69		3
+P		12.42		2.78		4
+Q		56.95		5.06		3
+R		95.78		3.76		3
+S		78.10		6.81		3
+T		39.23		6.26		1
+U		72.74		3.16		3
+V		94.59		1.43		1
+W		47.73		5.80		3
+X		1.15		7.64		3
+Y		70.47		8.47		3
+================================================= 
+Results of HPF-P run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		42.00		30.00
+B		24.00		22.00
+C		58.00		51.00
+D		76.00		68.00
+E		51.00		42.00
+F		68.00		58.00
+G		149.00		140.00
+H		103.00		100.00
+I		110.00		103.00
+J		35.00		24.00
+K		34.00		32.00
+L		36.00		21.00
+M		13.00		10.00
+N		120.00		110.00
+O		94.00		89.00
+P		16.00		13.00
+Q		100.00		94.00
+R		155.00		151.00
+S		140.00		133.00
+T		83.00		76.00
+U		133.00		129.00
+V		151.00		149.00
+W		89.00		83.00
+X		10.00		2.00
+Y		129.00		120.00
+============================================ 
+Average wait: 74.0 quanta | Average turnaround: 80.76 quanta | Throughput: 0.9548387 runs/quantum | Average response:28.131952
+Timeline: [ ][ ]XXXXXXXXMMMPPP[ ][ ][ ][ ][ ]LBBJJJLLLAJKKJLAAAAAAEEEEEEEEECCCCCCCFFFFFFFFFFDDDDDDDDTTTTTTTWWWWWWOOOOOQQQQQQHHHIIIIIIINNNNNNNNNNYYYYYYYYYUUUUSSSSSSSGGGGGGGGGVVRRRR
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		82.43		9.23		1
+B		42.58		7.76		1
+C		12.42		5.56		4
+D		95.26		7.69		2
+E		18.33		9.96		1
+F		26.45		4.58		2
+G		67.23		8.64		3
+H		15.64		5.90		1
+I		64.79		9.84		3
+J		62.04		1.38		2
+K		26.02		9.11		2
+L		50.62		4.36		3
+M		54.48		3.68		1
+O		8.71		8.40		3
+N		20.08		1.62		4
+P		51.31		8.05		3
+Q		55.38		5.40		3
+R		16.42		5.11		2
+S		35.75		6.78		3
+T		63.62		7.33		2
+U		35.11		9.51		1
+V		63.73		4.27		4
+W		97.15		6.82		3
+X		54.02		1.09		1
+Y		29.98		6.12		3
+================================================= 
+Results of SJF run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		150.00		140.00
+B		97.00		89.00
+C		32.00		26.00
+D		105.00		97.00
+E		180.00		170.00
+F		37.00		32.00
+G		130.00		121.00
+H		43.00		37.00
+I		170.00		160.00
+J		65.00		63.00
+K		140.00		130.00
+L		75.00		70.00
+M		63.00		59.00
+N		26.00		24.00
+O		18.00		9.00
+P		121.00		112.00
+Q		81.00		75.00
+R		24.00		18.00
+S		57.00		50.00
+T		89.00		81.00
+U		160.00		150.00
+V		70.00		65.00
+W		112.00		105.00
+X		59.00		57.00
+Y		50.00		43.00
+============================================ 
+Average wait: 79.32 quanta | Average turnaround: 86.16 quanta | Throughput: 0.95 runs/quantum | Average response:33.337917
+Timeline: [ ][ ][ ][ ][ ][ ][ ][ ][ ]OOOOOOOOORRRRRRNNCCCCCCFFFFFHHHHHHYYYYYYYSSSSSSSXXMMMMJJVVVVVLLLLLQQQQQQTTTTTTTTBBBBBBBBDDDDDDDDWWWWWWWPPPPPPPPPGGGGGGGGGKKKKKKKKKKAAAAAAAAAAUUUUUUUUUUIIIIIIIIIIEEEEEEEEEE
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		80.03		7.60		2
+B		10.17		9.42		3
+C		14.52		2.16		4
+D		69.56		3.69		2
+E		49.45		9.28		2
+F		58.99		9.05		2
+G		7.67		4.94		2
+H		6.27		2.14		1
+I		32.84		8.83		2
+J		74.17		6.69		3
+K		94.82		8.83		4
+L		85.14		7.36		4
+M		97.80		5.69		2
+O		55.18		1.80		3
+N		38.03		2.14		2
+P		95.47		6.44		2
+Q		11.33		2.42		4
+R		41.82		2.37		2
+S		57.21		3.34		4
+T		55.80		8.67		3
+U		8.00		6.19		1
+V		88.09		6.72		1
+W		28.58		1.56		3
+X		82.43		6.68		3
+Y		67.39		7.08		2
+================================================= 
+Results of RR run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		156.00		86.00
+B		50.00		13.00
+C		27.00		15.00
+D		95.00		72.00
+E		116.00		52.00
+F		139.00		60.00
+G		28.00		8.00
+H		17.00		7.00
+I		62.00		34.00
+J		141.00		79.00
+K		161.00		100.00
+L		157.00		88.00
+M		155.00		102.00
+N		48.00		40.00
+O		64.00		57.00
+P		159.00		101.00
+Q		26.00		14.00
+R		52.00		44.00
+S		76.00		59.00
+T		128.00		58.00
+U		36.00		9.00
+V		152.00		89.00
+W		34.00		30.00
+X		150.00		87.00
+Y		140.00		71.00
+============================================ 
+Average wait: 55.0 quanta | Average turnaround: 94.76 quanta | Throughput: 0.95652175 runs/quantum | Average response:2.569696
+Timeline: [ ][ ][ ][ ][ ][ ][ ]HGUHGUBQCHGUBQCGUBQCGUBWUBWIUBIBINBINRBINRBIREIEIEOTSFIEOTSFETSFYDETSFYDJETFYDJAXLVETFYDJAXLVKPMETFYJAXLVKPMETFYJAXLVKPMTFYJAXLVKPMFYJAXLVKPMAXLVKPMALKPKK
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		28.66		8.60		1
+B		78.44		7.71		2
+C		91.08		7.29		3
+D		76.66		6.81		1
+E		74.08		4.28		4
+F		65.37		7.82		2
+G		94.77		5.79		3
+H		86.46		4.38		2
+I		96.79		8.04		3
+J		40.18		3.75		1
+K		76.89		2.12		1
+L		77.08		9.47		2
+M		51.86		2.44		3
+O		13.81		3.02		4
+N		85.08		9.37		2
+P		56.61		2.38		4
+Q		78.44		3.92		1
+R		97.23		3.14		2
+S		69.87		6.45		2
+T		55.12		2.09		2
+U		12.92		4.04		2
+V		19.60		4.44		3
+W		33.16		9.26		3
+X		12.42		5.84		2
+Y		55.63		9.70		3
+================================================= 
+Results of FCFS run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		42.00		33.00
+B		123.00		115.00
+C		150.00		142.00
+D		102.00		95.00
+E		95.00		90.00
+F		83.00		75.00
+G		156.00		150.00
+H		142.00		137.00
+I		165.00		156.00
+J		56.00		52.00
+K		105.00		102.00
+L		115.00		105.00
+M		59.00		56.00
+N		137.00		127.00
+O		28.00		24.00
+P		75.00		72.00
+Q		127.00		123.00
+R		169.00		165.00
+S		90.00		83.00
+T		62.00		59.00
+U		18.00		13.00
+V		33.00		28.00
+W		52.00		42.00
+X		24.00		18.00
+Y		72.00		62.00
+============================================ 
+Average wait: 84.96 quanta | Average turnaround: 91.2 quanta | Throughput: 0.9230769 runs/quantum | Average response:23.831274
+Timeline: [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]UUUUUXXXXXXOOOOVVVVVAAAAAAAAAWWWWWWWWWWJJJJMMMTTTYYYYYYYYYYPPPFFFFFFFFSSSSSSSEEEEEDDDDDDDKKKLLLLLLLLLLBBBBBBBBQQQQNNNNNNNNNNHHHHHCCCCCCCCGGGGGGIIIIIIIIIRRRR
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		80.59		5.66		3
+B		97.46		6.08		3
+C		0.60		1.90		2
+D		42.30		4.77		3
+E		88.24		2.96		2
+F		27.91		5.82		3
+G		90.83		8.96		3
+H		18.34		3.51		4
+I		60.30		2.50		3
+J		20.75		2.99		2
+K		31.91		9.17		1
+L		96.19		3.11		4
+M		89.83		3.62		3
+O		7.43		5.78		2
+N		72.17		2.88		3
+P		20.26		9.75		2
+Q		60.96		4.03		4
+R		43.02		1.61		2
+S		83.50		8.63		2
+T		54.97		5.83		3
+U		76.05		4.55		4
+V		49.26		6.70		3
+W		81.38		1.50		2
+X		96.90		4.51		2
+Y		17.42		1.59		1
+================================================= 
+Results of SRT run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		90.00		84.00
+B		113.00		106.00
+C		3.00		1.00
+D		50.00		43.00
+E		93.00		90.00
+F		34.00		28.00
+G		138.00		129.00
+H		24.00		20.00
+I		66.00		63.00
+J		27.00		24.00
+K		120.00		71.00
+L		101.00		97.00
+M		97.00		93.00
+N		76.00		73.00
+O		14.00		8.00
+P		43.00		27.00
+Q		71.00		66.00
+R		46.00		44.00
+S		129.00		120.00
+T		63.00		57.00
+U		82.00		77.00
+V		57.00		50.00
+W		84.00		82.00
+X		106.00		101.00
+Y		20.00		18.00
+============================================ 
+Average wait: 62.88 quanta | Average turnaround: 69.88 quanta | Throughput: 0.92753625 runs/quantum | Average response:6.5368805
+Timeline: [ ]CC[ ][ ][ ][ ][ ]OOOOOO[ ][ ][ ][ ]YYHHHHJJJPFFFFFFPPPPPPPPPDRRDDDDVVVVVVVTTTTTTIIIQQQQQKKNNNKUUUUUWWAAAAAAEEEMMMMLLLLXXXXXBBBBBBBKKKKKKKSSSSSSSSSGGGGGGGGG
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		95.22		3.81		1
+B		90.33		5.32		4
+C		21.88		5.53		3
+D		28.58		4.95		1
+E		48.85		8.36		2
+F		89.74		1.23		2
+G		27.77		9.66		2
+H		92.12		8.99		2
+I		18.06		9.11		1
+J		5.39		2.52		2
+K		70.24		8.56		4
+L		64.32		9.21		2
+M		24.83		3.71		2
+O		40.84		8.76		3
+N		38.90		4.85		4
+P		15.80		7.87		2
+Q		9.38		9.79		1
+R		1.02		3.13		3
+S		53.02		4.39		4
+T		68.23		5.09		2
+U		37.54		3.17		1
+V		72.62		2.96		4
+W		2.78		8.57		3
+X		97.94		1.17		1
+Y		38.81		8.88		3
+================================================= 
+Results of HPF run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		161.00		157.00
+B		148.00		142.00
+C		52.00		46.00
+D		71.00		66.00
+E		107.00		98.00
+F		142.00		140.00
+G		66.00		56.00
+H		157.00		148.00
+I		46.00		36.00
+J		14.00		6.00
+K		137.00		128.00
+L		122.00		112.00
+M		56.00		52.00
+N		80.00		75.00
+O		98.00		89.00
+P		36.00		28.00
+Q		28.00		10.00
+R		6.00		2.00
+S		112.00		107.00
+T		128.00		122.00
+U		75.00		71.00
+V		140.00		137.00
+W		22.00		8.00
+X		163.00		161.00
+Y		89.00		80.00
+============================================ 
+Average wait: 83.08 quanta | Average turnaround: 90.24 quanta | Throughput: 0.9877301 runs/quantum | Average response:36.910954
+Timeline: [ ][ ]RRRRJJWWQQQJQWWWWWWWQQQQQQPPPPPPPPIIIIIIIIIICCCCCCMMMMGGGGGGGGGGDDDDDUUUUNNNNNYYYYYYYYYOOOOOOOOOEEEEEEEEESSSSSLLLLLLLLLLTTTTTTKKKKKKKKKVVVFFBBBBBBHHHHHHHHHAAAAXX
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		41.52		9.55		2
+B		14.22		3.93		3
+C		26.53		4.54		2
+D		18.96		4.26		3
+E		35.61		5.57		2
+F		63.71		7.26		3
+G		43.85		3.23		1
+H		25.23		1.11		1
+I		19.30		8.96		2
+J		83.19		6.67		1
+K		80.70		3.84		4
+L		34.94		1.12		3
+M		6.78		5.18		3
+O		96.90		6.98		2
+N		56.34		4.38		3
+P		23.18		3.49		2
+Q		87.61		4.67		3
+R		45.01		1.59		1
+S		40.45		9.85		2
+T		40.38		4.21		3
+U		58.54		3.72		3
+V		88.00		8.07		2
+W		12.51		3.93		2
+X		85.40		7.99		2
+Y		55.55		3.67		1
+================================================= 
+Results of HPF-NP run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		79.00		69.00
+B		21.00		17.00
+C		46.00		41.00
+D		35.00		30.00
+E		54.00		48.00
+F		106.00		98.00
+G		83.00		79.00
+H		41.00		39.00
+I		30.00		21.00
+J		117.00		110.00
+K		110.00		106.00
+L		48.00		46.00
+M		13.00		7.00
+N		94.00		89.00
+O		146.00		139.00
+P		39.00		35.00
+Q		130.00		125.00
+R		85.00		83.00
+S		64.00		54.00
+T		69.00		64.00
+U		98.00		94.00
+V		139.00		130.00
+W		17.00		13.00
+X		125.00		117.00
+Y		89.00		85.00
+============================================ 
+Average wait: 69.56 quanta | Average turnaround: 75.12 quanta | Throughput: 0.9520548 runs/quantum | Average response:22.183619
+Timeline: [ ][ ][ ][ ][ ][ ][ ]MMMMMMWWWWBBBBIIIIIIIIIDDDDDPPPPHHCCCCCLLEEEEEESSSSSSSSSSTTTTTAAAAAAAAAAGGGGRRYYYYNNNNNUUUUFFFFFFFFKKKKJJJJJJJXXXXXXXXQQQQQVVVVVVVVVOOOOOOO
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		91.54		1.13		4
+B		98.65		2.66		4
+C		93.84		7.25		2
+D		41.92		6.45		1
+E		78.83		2.02		4
+F		54.98		1.06		2
+G		87.31		1.43		4
+H		2.93		7.79		4
+I		25.63		1.62		2
+J		60.87		4.00		3
+K		42.63		2.34		1
+L		68.92		4.18		1
+M		33.35		2.28		3
+O		21.56		5.96		2
+N		21.72		1.65		3
+P		40.17		4.05		1
+Q		56.78		9.13		3
+R		69.94		9.09		3
+S		90.41		2.61		1
+T		27.44		7.25		2
+U		2.51		5.83		2
+V		13.31		1.09		1
+W		10.40		7.54		4
+X		34.29		6.07		2
+Y		15.15		1.58		1
+================================================= 
+Results of HPF-P run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		114.00		112.00
+B		125.00		122.00
+C		122.00		114.00
+D		69.00		62.00
+E		107.00		104.00
+F		74.00		72.00
+G		109.00		107.00
+H		21.00		9.00
+I		39.00		37.00
+J		89.00		84.00
+K		72.00		69.00
+L		94.00		89.00
+M		50.00		47.00
+N		37.00		35.00
+O		35.00		27.00
+P		62.00		57.00
+Q		84.00		74.00
+R		104.00		94.00
+S		112.00		109.00
+T		47.00		39.00
+U		9.00		3.00
+V		16.00		14.00
+W		34.00		21.00
+X		57.00		50.00
+Y		18.00		16.00
+============================================ 
+Average wait: 62.68 quanta | Average turnaround: 68.0 quanta | Throughput: 0.976 runs/quantum | Average response:15.278333
+Timeline: [ ][ ][ ]UUUUUUHHHHHVVYYHHHWWWWWWOOOOOWWONNIITTTTTTTTMMMXXXXXXXPPPPPDDDDDDDKKKFFQQQQQQQQQQJJJJJLLLLLRRRRRRRRRREEEGGSSSAACCCCCCCCBBB
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		88.80		9.84		3
+B		20.84		6.99		1
+C		51.51		4.31		1
+D		1.11		9.65		3
+E		69.42		9.63		2
+F		95.27		5.59		2
+G		47.68		2.55		3
+H		72.66		6.48		4
+I		82.56		6.62		2
+J		23.82		5.98		3
+K		32.56		9.18		3
+L		24.97		1.56		3
+M		11.32		7.36		3
+O		95.12		6.74		2
+N		83.30		4.39		2
+P		45.65		7.68		1
+Q		93.43		6.89		4
+R		56.31		3.31		3
+S		44.95		1.28		3
+T		67.23		8.95		3
+U		48.02		1.57		4
+V		36.37		9.10		3
+W		31.31		5.76		2
+X		21.38		9.13		2
+Y		20.92		2.55		1
+================================================= 
+Results of SJF run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		167.00		157.00
+B		45.00		38.00
+C		69.00		64.00
+D		12.00		2.00
+E		157.00		147.00
+F		103.00		97.00
+G		60.00		57.00
+H		85.00		78.00
+I		97.00		90.00
+J		30.00		24.00
+K		147.00		137.00
+L		32.00		30.00
+M		20.00		12.00
+N		90.00		85.00
+O		110.00		103.00
+P		55.00		47.00
+Q		117.00		110.00
+R		64.00		60.00
+S		47.00		45.00
+T		78.00		69.00
+U		57.00		55.00
+V		127.00		117.00
+W		38.00		32.00
+X		137.00		127.00
+Y		24.00		21.00
+============================================ 
+Average wait: 72.16 quanta | Average turnaround: 78.72 quanta | Throughput: 0.98203593 runs/quantum | Average response:21.499582
+Timeline: [ ][ ]DDDDDDDDDDMMMMMMMM[ ]YYYJJJJJJLLWWWWWWBBBBBBBSSPPPPPPPPUUGGGRRRRCCCCCTTTTTTTTTHHHHHHHNNNNNIIIIIIIFFFFFFOOOOOOOQQQQQQQVVVVVVVVVVXXXXXXXXXXKKKKKKKKKKEEEEEEEEEEAAAAAAAAAA
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		40.86		4.07		2
+B		19.17		8.17		1
+C		17.20		3.40		1
+D		86.58		8.71		2
+E		8.18		8.52		2
+F		44.46		1.26		1
+G		26.27		9.34		1
+H		33.65		9.70		1
+I		61.30		2.68		2
+J		90.15		5.53		1
+K		43.39		1.21		2
+L		72.14		6.91		2
+M		98.90		2.17		2
+O		9.69		5.09		3
+N		42.58		3.09		4
+P		88.56		5.22		3
+Q		37.12		6.59		3
+R		3.89		4.40		1
+S		7.61		9.31		2
+T		44.02		4.65		3
+U		6.66		3.73		3
+V		75.61		2.69		3
+W		22.15		2.74		2
+X		28.28		1.39		4
+Y		65.70		7.85		3
+================================================= 
+Results of RR run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		92.00		43.00
+B		114.00		22.00
+C		52.00		21.00
+D		146.00		97.00
+E		87.00		9.00
+F		60.00		46.00
+G		131.00		31.00
+H		138.00		41.00
+I		94.00		70.00
+J		143.00		99.00
+K		59.00		45.00
+L		140.00		83.00
+M		123.00		100.00
+N		80.00		44.00
+O		51.00		10.00
+P		142.00		98.00
+Q		117.00		42.00
+R		17.00		4.00
+S		102.00		8.00
+T		93.00		47.00
+U		25.00		7.00
+V		109.00		84.00
+W		39.00		23.00
+X		41.00		32.00
+Y		139.00		71.00
+============================================ 
+Average wait: 47.08 quanta | Average turnaround: 93.36 quanta | Throughput: 0.9726027 runs/quantum | Average response:4.1152835
+Timeline: [ ][ ][ ][ ]RRRUSEORUSEORUSEOCBWUSEOCBWGXSEOCBWGXHQANKFTSEOCBGHQANKFTSEBGHQANTIYSEBGHQANTIYLVSEBGHQATIYLVDPJMSBGHQYLVDPJMBGHQYLDPJMGHYLDPJGHYLDPJHYLDPJDDD
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		49.11		5.53		1
+B		46.00		8.20		2
+C		4.74		9.00		3
+D		20.65		1.53		1
+E		62.13		1.31		4
+F		65.20		1.96		2
+G		69.12		7.27		2
+H		72.23		5.74		1
+I		65.78		6.31		2
+J		22.73		3.72		3
+K		20.99		3.45		3
+L		45.40		9.16		2
+M		58.12		6.64		2
+O		66.43		4.85		1
+N		31.81		5.89		2
+P		6.00		6.17		2
+Q		36.70		5.41		1
+R		41.53		1.85		2
+S		9.89		2.14		2
+T		96.98		9.10		3
+U		82.97		6.22		1
+V		35.87		2.81		4
+W		47.95		6.20		2
+X		64.60		6.59		3
+Y		51.34		6.27		2
+================================================= 
+Results of FCFS run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		84.00		78.00
+B		71.00		62.00
+C		15.00		5.00
+D		27.00		25.00
+E		100.00		98.00
+F		109.00		107.00
+G		129.00		121.00
+H		135.00		129.00
+I		116.00		109.00
+J		35.00		31.00
+K		31.00		27.00
+L		62.00		52.00
+M		98.00		91.00
+N		41.00		35.00
+O		121.00		116.00
+P		22.00		15.00
+Q		50.00		44.00
+R		52.00		50.00
+S		25.00		22.00
+T		152.00		142.00
+U		142.00		135.00
+V		44.00		41.00
+W		78.00		71.00
+X		107.00		100.00
+Y		91.00		84.00
+============================================ 
+Average wait: 71.6 quanta | Average turnaround: 77.48 quanta | Throughput: 0.96710527 runs/quantum | Average response:24.62955
+Timeline: [ ][ ][ ][ ][ ]CCCCCCCCCCPPPPPPPSSSDDKKKKJJJJNNNNNNVVVQQQQQQRRLLLLLLLLLLBBBBBBBBBWWWWWWWAAAAAAYYYYYYYMMMMMMMEEXXXXXXXFFIIIIIIIOOOOOGGGGGGGGHHHHHHUUUUUUUTTTTTTTTTT
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		67.33		5.95		2
+B		75.08		6.96		1
+C		82.12		6.41		4
+D		78.52		7.42		2
+E		50.15		8.47		2
+F		54.95		6.39		2
+G		55.95		4.49		3
+H		29.90		5.01		1
+I		1.70		2.97		3
+J		4.58		1.94		2
+K		61.48		6.65		2
+L		37.53		8.17		2
+M		2.33		6.72		3
+O		69.76		4.06		2
+N		3.27		6.89		3
+P		16.08		4.36		1
+Q		95.80		6.66		1
+R		32.19		4.82		2
+S		45.70		4.52		3
+T		0.87		6.65		4
+U		36.25		8.63		3
+V		88.65		2.43		2
+W		63.61		2.26		3
+X		89.99		7.77		4
+Y		25.11		2.80		2
+================================================= 
+Results of SRT run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		74.00		68.00
+B		117.00		110.00
+C		96.00		86.00
+D		125.00		117.00
+E		142.00		133.00
+F		86.00		79.00
+G		65.00		60.00
+H		46.00		40.00
+I		5.00		2.00
+J		7.00		5.00
+K		103.00		96.00
+L		60.00		51.00
+M		20.00		13.00
+N		35.00		25.00
+O		79.00		74.00
+P		25.00		20.00
+Q		110.00		103.00
+R		40.00		35.00
+S		51.00		46.00
+T		13.00		1.00
+U		151.00		142.00
+V		92.00		89.00
+W		68.00		65.00
+X		133.00		125.00
+Y		29.00		26.00
+============================================ 
+Average wait: 64.44 quanta | Average turnaround: 70.88 quanta | Throughput: 0.9933775 runs/quantum | Average response:17.68385
+Timeline: [ ]TIIIJJTTTTTTMMMMMMMPPPPPNYYYNNNNNNRRRRRHHHHHHSSSSSLLLLLLLLLGGGGGWWWAAAAAAOOOOOFFFFFFFCCCVVVCCCCKKKKKKKQQQQQQQBBBBBBBDDDDDDDDXXXXXXXXEEEEEEEEEUUUUUUUUU
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		39.19		8.74		1
+B		79.98		8.83		1
+C		76.02		4.79		2
+D		2.23		9.55		3
+E		69.04		8.41		4
+F		33.23		2.83		3
+G		66.41		3.76		4
+H		24.07		3.91		2
+I		40.38		9.45		3
+J		12.13		5.90		3
+K		60.47		8.13		1
+L		57.37		6.09		3
+M		77.93		3.26		3
+O		25.17		6.26		4
+N		59.14		7.05		1
+P		78.55		8.98		3
+Q		71.83		9.54		2
+R		46.56		8.35		1
+S		60.21		8.47		2
+T		4.98		3.43		3
+U		23.51		3.32		2
+V		67.81		7.10		1
+W		47.18		9.31		4
+X		29.60		8.31		3
+Y		96.93		1.40		3
+================================================= 
+Results of HPF run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		60.00		40.00
+B		180.00		171.00
+C		158.00		153.00
+D		17.00		3.00
+E		143.00		134.00
+F		55.00		52.00
+G		126.00		122.00
+H		32.00		28.00
+I		70.00		60.00
+J		23.00		17.00
+K		113.00		104.00
+L		96.00		89.00
+M		162.00		158.00
+N		104.00		96.00
+O		48.00		32.00
+P		171.00		162.00
+Q		153.00		143.00
+R		79.00		70.00
+S		122.00		113.00
+T		14.00		10.00
+U		28.00		24.00
+V		134.00		126.00
+W		89.00		79.00
+X		52.00		35.00
+Y		182.00		180.00
+============================================ 
+Average wait: 88.04 quanta | Average turnaround: 96.44 quanta | Throughput: 0.978022 runs/quantum | Average response:38.043877
+Timeline: [ ][ ][ ]DDDDDDDTTTTDDDJJJJJJ[ ]UUUUHHHHOOOXXXXOAAAAXOOOXXXXFFFAAAAAIIIIIIIIIIRRRRRRRRRWWWWWWWWWWLLLLLLLNNNNNNNNKKKKKKKKKSSSSSSSSSGGGGVVVVVVVVEEEEEEEEEQQQQQQQQQQCCCCCMMMMPPPPPPPPPBBBBBBBBBYY
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		43.58		6.05		2
+B		53.42		1.31		2
+C		40.82		1.26		2
+D		94.09		6.80		2
+E		61.06		1.49		2
+F		68.04		9.27		2
+G		1.88		4.29		3
+H		77.33		5.10		1
+I		2.90		6.60		3
+J		36.99		2.11		4
+K		55.07		2.46		1
+L		83.23		2.78		2
+M		66.67		3.00		3
+O		15.40		6.68		2
+N		1.05		3.81		1
+P		83.26		5.42		1
+Q		37.24		4.56		2
+R		42.48		9.72		3
+S		9.40		1.05		2
+T		61.90		4.86		2
+U		42.80		8.73		1
+V		22.87		8.44		2
+W		23.58		2.75		2
+X		45.09		3.48		3
+Y		47.58		8.42		4
+================================================= 
+Results of HPF-NP run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		75.00		68.00
+B		90.00		88.00
+C		58.00		56.00
+D		136.00		129.00
+E		95.00		93.00
+F		114.00		104.00
+G		11.00		6.00
+H		120.00		114.00
+I		18.00		11.00
+J		56.00		53.00
+K		93.00		90.00
+L		123.00		120.00
+M		104.00		100.00
+N		6.00		2.00
+O		27.00		20.00
+P		129.00		123.00
+Q		44.00		39.00
+R		68.00		58.00
+S		20.00		18.00
+T		100.00		95.00
+U		53.00		44.00
+V		36.00		27.00
+W		39.00		36.00
+X		79.00		75.00
+Y		88.00		79.00
+============================================ 
+Average wait: 65.92 quanta | Average turnaround: 71.28 quanta | Throughput: 0.9852941 runs/quantum | Average response:21.210964
+Timeline: [ ][ ]NNNNGGGGGIIIIIIISSOOOOOOOVVVVVVVVVWWWQQQQQUUUUUUUUUJJJCCRRRRRRRRRRAAAAAAAXXXXYYYYYYYYYBBKKKEETTTTTMMMMFFFFFFFFFFHHHHHHLLLPPPPPPDDDDDDD
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		25.66		2.64		3
+B		72.37		7.21		2
+C		31.92		2.07		1
+D		38.71		9.83		2
+E		64.67		7.65		1
+F		68.02		3.50		1
+G		60.03		4.97		4
+H		29.21		4.91		4
+I		54.76		1.90		2
+J		13.28		7.30		4
+K		81.09		1.04		3
+L		9.26		8.25		2
+M		2.33		6.62		3
+O		54.74		9.64		4
+N		14.59		2.77		2
+P		81.80		3.28		2
+Q		59.14		2.75		2
+R		51.88		2.30		4
+S		10.78		2.52		3
+T		17.66		3.28		1
+U		44.85		4.05		3
+V		82.40		7.14		2
+W		80.01		5.48		3
+X		13.13		7.50		3
+Y		8.75		2.37		3
+================================================= 
+Results of HPF-P run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		51.00		48.00
+B		117.00		109.00
+C		59.00		56.00
+D		69.00		59.00
+E		105.00		97.00
+F		109.00		105.00
+G		97.00		92.00
+H		56.00		51.00
+I		79.00		77.00
+J		37.00		29.00
+K		125.00		123.00
+L		24.00		10.00
+M		10.00		3.00
+N		46.00		43.00
+O		89.00		79.00
+P		129.00		125.00
+Q		92.00		89.00
+R		77.00		74.00
+S		27.00		24.00
+T		48.00		18.00
+U		74.00		69.00
+V		137.00		129.00
+W		123.00		117.00
+X		43.00		27.00
+Y		17.00		14.00
+============================================ 
+Average wait: 66.68 quanta | Average turnaround: 73.6 quanta | Throughput: 0.9781022 runs/quantum | Average response:23.839573
+Timeline: [ ][ ][ ]MMMMMMMLLLLYYYLTTLLLLSSSXXJJJJJJJJXXXXXXNNNTTAAAHHHHHCCCDDDDDDDDDDUUUUURRRIIOOOOOOOOOOQQQGGGGGEEEEEEEEFFFFBBBBBBBBWWWWWWKKPPPPVVVVVVVV
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		40.77		9.02		3
+B		5.74		9.77		1
+C		35.58		4.19		4
+D		30.00		3.74		3
+E		87.94		6.77		2
+F		98.80		3.27		4
+G		35.05		9.59		3
+H		33.90		2.40		3
+I		19.48		9.87		4
+J		79.59		6.29		3
+K		59.60		1.18		2
+L		18.39		5.81		2
+M		80.79		8.61		3
+O		63.23		7.88		3
+N		15.99		9.55		3
+P		19.12		2.01		4
+Q		56.23		1.32		3
+R		14.11		5.13		1
+S		0.51		9.12		3
+T		63.80		6.19		2
+U		67.41		3.67		3
+V		50.18		8.83		4
+W		26.08		6.52		2
+X		11.90		8.60		1
+Y		90.20		5.13		3
+================================================= 
+Results of SJF run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		139.00		129.00
+B		21.00		11.00
+C		48.00		43.00
+D		43.00		39.00
+E		111.00		104.00
+F		104.00		100.00
+G		159.00		149.00
+H		39.00		36.00
+I		169.00		159.00
+J		94.00		87.00
+K		66.00		64.00
+L		36.00		30.00
+M		120.00		111.00
+N		149.00		139.00
+O		87.00		79.00
+P		24.00		21.00
+Q		68.00		66.00
+R		30.00		24.00
+S		11.00		1.00
+T		79.00		72.00
+U		72.00		68.00
+V		129.00		120.00
+W		55.00		48.00
+X		64.00		55.00
+Y		100.00		94.00
+============================================ 
+Average wait: 73.96 quanta | Average turnaround: 80.68 quanta | Throughput: 0.99408287 runs/quantum | Average response:29.783375
+Timeline: [ ]SSSSSSSSSSBBBBBBBBBBPPPRRRRRRLLLLLLHHHDDDDCCCCCWWWWWWWXXXXXXXXXKKQQUUUUTTTTTTTOOOOOOOOJJJJJJJYYYYYYFFFFEEEEEEEMMMMMMMMMVVVVVVVVVAAAAAAAAAANNNNNNNNNNGGGGGGGGGGIIIIIIIIII
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		50.36		3.53		3
+B		15.11		4.20		4
+C		17.84		5.66		3
+D		94.59		4.18		3
+E		80.92		5.07		3
+F		84.54		7.22		2
+G		39.94		5.61		3
+H		16.70		8.07		2
+I		40.27		3.78		4
+J		93.42		7.19		3
+K		53.74		5.00		2
+L		72.06		6.07		3
+M		2.63		3.73		3
+O		13.98		9.80		3
+N		34.04		7.90		3
+P		84.41		4.69		4
+Q		39.13		1.50		2
+R		16.39		2.94		2
+S		45.10		9.90		2
+T		50.16		5.63		4
+U		8.65		5.59		1
+V		33.93		4.54		3
+W		83.63		4.73		3
+X		15.84		5.26		3
+Y		97.21		7.64		1
+================================================= 
+Results of RR run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		95.00		58.00
+B		49.00		17.00
+C		65.00		21.00
+D		146.00		103.00
+E		143.00		85.00
+F		152.00		87.00
+G		109.00		43.00
+H		107.00		19.00
+I		80.00		45.00
+J		155.00		102.00
+K		112.00		60.00
+L		142.00		73.00
+M		7.00		3.00
+N		121.00		35.00
+O		106.00		14.00
+P		137.00		88.00
+Q		56.00		44.00
+R		33.00		20.00
+S		148.00		46.00
+T		123.00		59.00
+U		16.00		9.00
+V		77.00		34.00
+W		135.00		86.00
+X		63.00		18.00
+Y		156.00		104.00
+============================================ 
+Average wait: 50.92 quanta | Average turnaround: 101.32 quanta | Throughput: 0.96794873 runs/quantum | Average response:3.5361035
+Timeline: [ ][ ][ ]MMMM[ ][ ]UUUUUOUOBXHRCOBXHRCOBXHRCVNOBXHCVNGQISOBXHCVNGQISATKOXHCVNGISATKLOHVNGISATKLEWFPOHNGSATKLEWFPJDYOHNGSTKLEWFPJDYNSTLEWFPJDYSLEWFPJDYSLEFJDYSFJYFJYJY
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		31.69		8.53		2
+B		18.72		8.68		3
+C		68.92		5.30		4
+D		62.98		8.57		2
+E		77.48		8.15		3
+F		88.81		6.18		2
+G		38.52		8.16		3
+H		3.42		1.13		1
+I		45.98		1.91		2
+J		64.88		4.91		3
+K		6.58		9.20		2
+L		83.27		8.17		3
+M		96.99		6.61		3
+O		75.28		6.71		2
+N		10.54		1.16		2
+P		55.73		8.71		1
+Q		7.87		1.21		4
+R		92.76		9.61		1
+S		78.40		1.93		3
+T		88.52		3.83		2
+U		85.29		7.67		4
+V		87.46		5.14		2
+W		75.64		4.39		1
+X		96.80		6.54		2
+Y		22.48		1.92		3
+================================================= 
+Results of FCFS run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		41.00		32.00
+B		30.00		21.00
+C		85.00		79.00
+D		74.00		65.00
+E		106.00		97.00
+F		138.00		131.00
+G		50.00		41.00
+H		6.00		4.00
+I		52.00		50.00
+J		79.00		74.00
+K		17.00		7.00
+L		117.00		108.00
+M		159.00		152.00
+N		21.00		19.00
+O		92.00		85.00
+P		65.00		56.00
+Q		19.00		17.00
+R		152.00		142.00
+S		108.00		106.00
+T		142.00		138.00
+U		125.00		117.00
+V		131.00		125.00
+W		97.00		92.00
+X		166.00		159.00
+Y		32.00		30.00
+============================================ 
+Average wait: 77.88 quanta | Average turnaround: 84.16 quanta | Throughput: 0.94578314 runs/quantum | Average response:19.27874
+Timeline: [ ][ ][ ][ ]HH[ ]KKKKKKKKKKQQNNBBBBBBBBBYYAAAAAAAAAGGGGGGGGGII[ ][ ][ ][ ]PPPPPPPPPDDDDDDDDDJJJJJCCCCCCOOOOOOOWWWWWEEEEEEEEESSLLLLLLLLLUUUUUUUUVVVVVVFFFFFFFTTTTRRRRRRRRRRMMMMMMMXXXXXXX
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		41.79		7.64		4
+B		87.51		5.46		1
+C		37.11		3.58		1
+D		48.68		1.61		2
+E		84.81		7.13		1
+F		70.75		8.04		3
+G		17.87		6.60		4
+H		50.14		3.52		3
+I		95.15		5.20		2
+J		8.87		5.40		1
+K		95.97		4.39		3
+L		93.83		8.80		2
+M		93.16		1.14		4
+O		81.78		1.98		1
+N		9.14		8.96		2
+P		56.86		8.48		2
+Q		70.71		6.88		1
+R		57.71		7.89		2
+S		26.93		8.26		3
+T		23.23		8.10		3
+U		95.39		9.27		2
+V		14.09		8.85		2
+W		47.04		7.32		4
+X		23.52		4.68		2
+Y		60.10		6.47		4
+================================================= 
+Results of SRT run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		78.00		70.00
+B		94.00		88.00
+C		42.00		38.00
+D		51.00		49.00
+E		114.00		87.00
+F		131.00		122.00
+G		36.00		29.00
+H		55.00		51.00
+I		107.00		101.00
+J		15.00		9.00
+K		101.00		96.00
+L		158.00		149.00
+M		96.00		94.00
+N		167.00		158.00
+O		84.00		82.00
+P		149.00		140.00
+Q		87.00		78.00
+R		122.00		114.00
+S		140.00		131.00
+T		49.00		36.00
+U		177.00		167.00
+V		24.00		15.00
+W		63.00		55.00
+X		29.00		24.00
+Y		70.00		63.00
+============================================ 
+Average wait: 81.84 quanta | Average turnaround: 89.56 quanta | Throughput: 0.9491525 runs/quantum | Average response:26.153257
+Timeline: [ ][ ][ ][ ][ ][ ][ ][ ][ ]JJJJJJVVVVVVVVVXXXXXGGGGGGGTTCCCCTTTTTTTDDHHHHWWWWWWWWYYYYYYYAAAAAAAAQQQQOOQQQEBBBBBBMMKKKKKIIIIIIEEEEEEERRRRRRRRFFFFFFFFFSSSSSSSSSPPPPPPPPPLLLLLLLLLNNNNNNNNNUUUUUUUUUU
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		2.15		4.87		1
+B		64.55		1.70		4
+C		36.88		1.30		3
+D		61.89		1.65		4
+E		28.93		7.47		1
+F		14.95		3.65		2
+G		37.77		7.44		3
+H		55.79		6.55		3
+I		78.59		5.50		1
+J		41.14		8.37		4
+K		4.40		3.03		4
+L		50.75		5.07		1
+M		58.66		4.36		4
+O		96.68		7.62		3
+N		24.40		5.93		4
+P		92.28		2.53		2
+Q		52.33		5.97		1
+R		73.48		2.97		1
+S		43.61		8.79		2
+T		35.30		1.11		1
+U		4.72		9.86		1
+V		17.35		8.20		2
+W		80.38		2.67		3
+X		76.73		4.67		2
+Y		19.40		6.04		3
+================================================= 
+Results of HPF run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		8.00		3.00
+B		114.00		112.00
+C		60.00		58.00
+D		112.00		110.00
+E		56.00		48.00
+F		26.00		20.00
+G		68.00		60.00
+H		105.00		98.00
+I		128.00		122.00
+J		77.00		68.00
+K		24.00		18.00
+L		92.00		86.00
+M		110.00		105.00
+N		48.00		42.00
+O		142.00		134.00
+P		134.00		131.00
+Q		98.00		92.00
+R		117.00		114.00
+S		86.00		77.00
+T		58.00		56.00
+U		18.00		8.00
+V		35.00		26.00
+W		131.00		128.00
+X		122.00		117.00
+Y		42.00		35.00
+============================================ 
+Average wait: 74.72 quanta | Average turnaround: 80.44 quanta | Throughput: 0.97887325 runs/quantum | Average response:28.595757
+Timeline: [ ][ ][ ]AAAAAUUUUUUUUUUKKFFKKFFVVVVVVVVVYYYYYYYNNNNNNEEEEEEEETTCCGGGGGGGGJJJJJJJJJSSSSSSSSSLLLLLLQQQQQQHHHHHHHMMMMMDDBBRRRXXXXXIIIIIIWWWPPPOOOOOOOO
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		12.76		7.54		2
+B		18.45		5.15		2
+C		32.80		3.10		3
+D		68.56		1.26		4
+E		87.76		5.65		2
+F		29.92		4.17		2
+G		92.85		2.36		2
+H		36.47		2.91		2
+I		31.53		9.92		2
+J		48.60		7.27		1
+K		43.16		1.42		2
+L		97.00		2.69		4
+M		3.24		5.80		1
+O		7.36		3.13		3
+N		6.65		2.45		3
+P		46.55		3.39		2
+Q		93.71		2.97		2
+R		89.29		3.12		2
+S		25.04		9.09		3
+T		15.72		8.79		3
+U		85.64		6.26		2
+V		39.56		3.73		2
+W		98.44		5.61		4
+X		8.61		7.43		3
+Y		38.11		4.66		2
+================================================= 
+Results of HPF-NP run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		33.00		25.00
+B		48.00		42.00
+C		77.00		73.00
+D		105.00		103.00
+E		118.00		112.00
+F		63.00		58.00
+G		125.00		122.00
+H		80.00		77.00
+I		73.00		63.00
+J		103.00		95.00
+K		91.00		89.00
+L		131.00		128.00
+M		10.00		4.00
+N		13.00		10.00
+O		17.00		13.00
+P		95.00		91.00
+Q		128.00		125.00
+R		122.00		118.00
+S		58.00		48.00
+T		42.00		33.00
+U		112.00		105.00
+V		89.00		85.00
+W		137.00		131.00
+X		25.00		17.00
+Y		85.00		80.00
+============================================ 
+Average wait: 73.88 quanta | Average turnaround: 79.2 quanta | Throughput: 0.9708029 runs/quantum | Average response:27.56918
+Timeline: [ ][ ][ ][ ]MMMMMMNNNOOOOXXXXXXXXAAAAAAAATTTTTTTTTBBBBBBSSSSSSSSSSFFFFFIIIIIIIIIICCCCHHHYYYYYVVVVKKPPPPJJJJJJJJDDUUUUUUUEEEEEERRRRGGGQQQLLLWWWWWW
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		30.19		1.25		1
+B		61.87		9.74		2
+C		83.92		3.48		1
+D		78.01		6.99		1
+E		89.26		8.79		2
+F		15.26		2.99		2
+G		65.49		8.45		1
+H		50.77		2.40		4
+I		5.22		2.93		3
+J		4.34		8.32		4
+K		24.34		3.27		4
+L		31.88		7.47		1
+M		65.51		6.92		3
+O		94.55		5.60		3
+N		14.68		4.07		2
+P		39.30		1.04		3
+Q		35.83		9.88		2
+R		78.64		9.07		2
+S		68.00		2.86		1
+T		30.51		9.25		1
+U		25.07		9.02		3
+V		26.70		4.14		1
+W		44.75		4.16		3
+X		10.85		5.36		2
+Y		35.96		1.12		2
+================================================= 
+Results of HPF-P run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		52.00		50.00
+B		102.00		92.00
+C		142.00		138.00
+D		128.00		121.00
+E		151.00		142.00
+F		31.00		25.00
+G		111.00		102.00
+H		92.00		89.00
+I		9.00		6.00
+J		29.00		5.00
+K		44.00		40.00
+L		70.00		62.00
+M		118.00		111.00
+N		25.00		17.00
+O		157.00		151.00
+P		84.00		82.00
+Q		80.00		70.00
+R		138.00		128.00
+S		121.00		118.00
+T		62.00		52.00
+U		50.00		36.00
+V		36.00		31.00
+W		89.00		84.00
+X		17.00		11.00
+Y		82.00		80.00
+============================================ 
+Average wait: 73.72 quanta | Average turnaround: 80.8 quanta | Throughput: 0.9681529 runs/quantum | Average response:29.283287
+Timeline: [ ][ ][ ][ ][ ]JIIIJJXXXXXXNJJJNNNNFJJJFFVVVVVUUUUKKKKUUUUUUAATTTTTTTTTTLLLLLLLLQQQQQQQQQQYYPPWWWWWHHHBBBBBBBBBBGGGGGGGGGMMMMMMMSSSDDDDDDDRRRRRRRRRRCCCCEEEEEEEEEOOOOOO
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		14.49		8.71		1
+B		47.67		9.15		2
+C		70.34		8.68		3
+D		21.47		5.60		3
+E		45.92		2.35		2
+F		71.72		7.31		1
+G		16.47		4.16		3
+H		43.83		3.55		4
+I		13.60		4.99		4
+J		24.65		9.83		3
+K		61.53		3.14		4
+L		73.21		6.87		3
+M		62.51		7.97		3
+O		83.48		9.15		3
+N		31.03		7.19		2
+P		75.22		5.26		2
+Q		73.16		4.73		3
+R		18.48		4.02		1
+S		32.29		9.04		1
+T		54.07		5.53		4
+U		94.36		2.92		4
+V		64.03		9.09		2
+W		63.85		8.39		2
+X		7.93		2.69		4
+Y		44.60		9.28		3
+================================================= 
+Results of SJF run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		52.00		43.00
+B		164.00		154.00
+C		124.00		115.00
+D		35.00		29.00
+E		55.00		52.00
+F		106.00		98.00
+G		29.00		24.00
+H		59.00		55.00
+I		19.00		14.00
+J		184.00		174.00
+K		69.00		65.00
+L		95.00		88.00
+M		77.00		69.00
+N		43.00		35.00
+O		154.00		144.00
+P		88.00		82.00
+Q		82.00		77.00
+R		24.00		19.00
+S		134.00		124.00
+T		65.00		59.00
+U		98.00		95.00
+V		144.00		134.00
+W		115.00		106.00
+X		11.00		8.00
+Y		174.00		164.00
+============================================ 
+Average wait: 81.08 quanta | Average turnaround: 88.0 quanta | Throughput: 0.9402174 runs/quantum | Average response:32.682533
+Timeline: [ ][ ][ ][ ][ ][ ][ ][ ]XXX[ ][ ][ ]IIIIIRRRRRGGGGGDDDDDDNNNNNNNNAAAAAAAAAEEEHHHHTTTTTTKKKKMMMMMMMMQQQQQPPPPPPLLLLLLLUUUFFFFFFFFWWWWWWWWWCCCCCCCCCSSSSSSSSSSVVVVVVVVVVOOOOOOOOOOBBBBBBBBBBYYYYYYYYYYJJJJJJJJJJ
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		96.70		8.89		4
+B		52.51		2.33		4
+C		26.65		1.76		1
+D		34.43		6.36		4
+E		74.27		2.45		2
+F		27.84		3.44		4
+G		30.51		7.24		4
+H		60.58		1.93		1
+I		27.71		3.08		4
+J		10.78		9.50		4
+K		79.69		6.80		4
+L		82.49		4.62		2
+M		1.58		1.08		3
+O		8.65		2.44		3
+N		35.48		9.89		2
+P		97.01		9.67		3
+Q		1.39		4.29		2
+R		96.84		3.06		2
+S		41.53		7.09		2
+T		26.28		1.25		4
+U		0.37		1.81		3
+V		16.30		8.10		1
+W		24.65		3.82		3
+X		35.60		7.42		2
+Y		85.96		3.59		4
+================================================= 
+Results of RR run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		134.00		99.00
+B		73.00		54.00
+C		36.00		27.00
+D		92.00		40.00
+E		96.00		79.00
+F		58.00		29.00
+G		91.00		31.00
+H		74.00		65.00
+I		59.00		30.00
+J		45.00		12.00
+K		125.00		80.00
+L		121.00		88.00
+M		6.00		2.00
+N		119.00		41.00
+O		14.00		9.00
+P		136.00		101.00
+Q		11.00		3.00
+R		123.00		100.00
+S		105.00		43.00
+T		37.00		28.00
+U		5.00		1.00
+V		67.00		17.00
+W		57.00		26.00
+X		104.00		42.00
+Y		115.00		89.00
+============================================ 
+Average wait: 45.44 quanta | Average turnaround: 76.12 quanta | Throughput: 0.99264705 runs/quantum | Average response:2.4084828
+Timeline: [ ]UMQUMQQQOQOJOJJJVJVJVJVJVWCTFIGJVWCTFIGDNXSJVWFIGDNXSBVWFIGDNXSBHVGDNXSBHGDNXSEKGDNXSEKLYGDNXSEKLYARPNXSKLYARPNKLYARPNKLARPKAPAPAPAPAPP
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		94.02		5.12		3
+B		61.05		7.96		3
+C		36.97		1.64		2
+D		96.35		4.45		3
+E		9.16		4.07		1
+F		55.32		5.26		3
+G		33.15		2.45		4
+H		74.38		3.04		2
+I		66.30		3.57		1
+J		2.80		8.23		2
+K		25.59		9.99		3
+L		26.20		3.13		2
+M		15.25		9.06		2
+O		62.34		5.99		1
+N		38.61		8.89		3
+P		12.11		9.84		2
+Q		0.02		7.95		2
+R		83.09		2.28		3
+S		76.68		1.52		4
+T		12.99		3.29		4
+U		2.39		2.83		3
+V		15.28		9.19		3
+W		95.75		2.26		2
+X		40.16		4.12		2
+Y		44.19		6.95		2
+================================================= 
+Results of FCFS run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		139.00		133.00
+B		114.00		106.00
+C		79.00		77.00
+D		147.00		142.00
+E		26.00		21.00
+F		106.00		100.00
+G		77.00		74.00
+H		128.00		124.00
+I		124.00		120.00
+J		18.00		9.00
+K		70.00		60.00
+L		74.00		70.00
+M		50.00		40.00
+N		88.00		79.00
+O		120.00		114.00
+P		36.00		26.00
+Q		9.00		1.00
+R		133.00		130.00
+S		130.00		128.00
+T		40.00		36.00
+U		21.00		18.00
+V		60.00		50.00
+W		142.00		139.00
+X		93.00		88.00
+Y		100.00		93.00
+============================================ 
+Average wait: 79.12 quanta | Average turnaround: 84.96 quanta | Throughput: 0.99319726 runs/quantum | Average response:35.914337
+Timeline: [ ]QQQQQQQQJJJJJJJJJUUUEEEEEPPPPPPPPPPTTTTMMMMMMMMMMVVVVVVVVVVKKKKKKKKKKLLLLGGGCCNNNNNNNNNXXXXXYYYYYYYFFFFFFBBBBBBBBOOOOOOIIIIHHHHSSRRRAAAAAAWWWDDDDD
+
+Running with processes:
+================================================= 
+Process ID | Arrival Time | Burst time | Priority 
+A		50.47		9.45		3
+B		45.46		6.32		1
+C		34.34		1.45		3
+D		64.42		9.47		1
+E		3.49		5.60		2
+F		24.71		9.61		3
+G		92.70		7.98		2
+H		48.23		6.23		3
+I		79.63		6.74		3
+J		92.29		2.04		2
+K		16.35		2.60		4
+L		30.74		4.31		1
+M		64.42		1.18		2
+O		71.01		6.66		3
+N		13.56		7.45		4
+P		90.46		2.96		3
+Q		38.84		3.28		2
+R		92.05		8.51		4
+S		44.68		8.08		3
+T		6.76		6.39		1
+U		90.71		2.76		2
+V		75.72		6.94		3
+W		86.60		3.46		2
+X		52.51		8.21		2
+Y		52.35		2.05		3
+================================================= 
+Results of SRT run:
+============================================ 
+Process ID | Turnaround time | Wait time 
+A		147.00		137.00
+B		66.00		59.00
+C		38.00		36.00
+D		157.00		147.00
+E		10.00		4.00
+F		49.00		28.00
+G		119.00		111.00
+H		59.00		49.00
+I		104.00		84.00
+J		97.00		94.00
+K		20.00		17.00
+L		36.00		31.00
+M		68.00		66.00
+N		28.00		20.00
+O		84.00		77.00
+P		100.00		97.00
+Q		43.00		39.00
+R		137.00		128.00
+S		77.00		68.00
+T		17.00		10.00
+U		94.00		91.00
+V		111.00		104.00
+W		91.00		87.00
+X		128.00		119.00
+Y		56.00		53.00
+============================================ 
+Average wait: 70.24 quanta | Average turnaround: 77.44 quanta | Throughput: 0.9745223 runs/quantum | Average response:15.739305
+Timeline: [ ][ ][ ][ ]EEEEEETTTTTTTKKKNNNNNNNNFFFLLLLLCCFQQQQFFFFFFHHHHYYYHHHBBBBBBBMMSSSSSSSSSOOOOOOOIIIWWWWUUUJJJPPPIIIIVVVVVVVGGGGGGGGXXXXXXXXXRRRRRRRRRAAAAAAAAAADDDDDDDDDD
+

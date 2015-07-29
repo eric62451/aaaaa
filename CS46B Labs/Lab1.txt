@@ -1,0 +1,70 @@
+Eric Tam (Driver) / Benjamin Ko (Scribe)
+
+Part A
+Step 1.Done
+Step 2.Done
+
+Part B
+Step 1.Done
+Step 2.Done
+Step 3.Done
+Step 4.Done
+
+Part C
+Step 1.Done
+Step 2.Done
+Step 3.Done
+Step 4.Done
+
+Part D
+Step 1.Done
+Step 2.Item(String name, String key, String value)
+Step 3.
+	public Item(String name, String key, String value) 
+	{
+      	  this.name = name;
+       	  this.key = key;
+      	  this.value = value;
+   	 }
+
+Part E
+Step 1.Done
+Step 2.Done
+Step 3.Done
+Step 4.Done
+Step 5.Done
+Step 6.
+
+import javax.swing.JFileChooser;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Eric Tam
+ */
+public class AddressBookDemo {
+public static void main(String[] args)
+{
+   JFileChooser chooser = new JFileChooser();
+   int result = chooser.showOpenDialog(null);
+   if (result == JFileChooser.APPROVE_OPTION)
+   {
+       String filename = chooser.getSelectedFile().getPath();
+       AddressBook book = new ArrayListAddressBook();
+       
+   }
+}
+
+}
+
+Step 7.Done
+
+Part F
+Part 1.Done
+Step 2.System.out.print(book.get("Horstmann","Phone"));
+Step 3.book.put("Tam", "Email", "Eric.Tam.Sf@live.com");
+Step 4.Done

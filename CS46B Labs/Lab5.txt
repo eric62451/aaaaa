@@ -1,0 +1,40 @@
+Eric Tam (Scribe) / Jowshua Warner (Driver)
+
+PART A
+Step 1: java -classpath build/classes AddressBookDemo deptdir.txt
+Step 2: Nothing, because the remove mothod havent been finished
+
+PART B
+Step 1:
+Check for all items inside the arraylist items
+if item = to the parameters,
+if yes, remove that item from arraylist
+if no, check another item
+
+Step 2: removing something that does not even exist in the arraylist
+
+PART C
+Step 1: ls
+Step 2: src, build, nbproject, deptdir.txt, etc
+Step 3: use ls to see if it list the folder
+Step 4: Done
+Step 5: it creates the a class in the test folder with codes in it
+Step 6: in test results, a green bar appears and say 100% and on the bottom it says passed
+Step 7: Done
+
+PART D
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: The removeTest method failed, because we havent implement a remove method yet.
+Step 5: Done
+Step 6: Everything passed
+Step 7:Done
+
+PART E
+Step 1: Done
+Step 2: All passed
+Step 3: Done
+Step 4: it fails
+Step 5: write (expected=NoSuchElementException.class) after the @Test annotation
+Step 6: it passed because we were expecting an exception to be thrown and it was thrown

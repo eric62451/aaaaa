@@ -1,0 +1,37 @@
+-> def count = var(0)
+OK
+-> count
+Variable(0.0)
+-> [count]
+0.0
+-> count = [count] +1
+Done
+-> [count]
+1.0
+-> while([count]<100) count = [count] + 1
+Done
+-> [count]
+100.0
+-> def fun = var(lambda(x) x * x)
+OK
+-> [fun](3)
+9.0
+-> fun = lambda(x) 2*x
+Done
+-> [fun](3)
+6.0
+-> def more = var(true)
+OK
+-> more = false
+Done
+-> more = 0
+Done
+-> def countRef = var(count)
+OK
+-> countRef
+Variable(Variable(100.0))
+-> [countRef]
+Variable(100.0)
+-> [[countRef]]
+100.0
+-> 

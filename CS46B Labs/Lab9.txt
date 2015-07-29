@@ -1,0 +1,71 @@
+Eric Tam (Driver) / Joshua Warner (Scribe)
+
+PART A
+Step 1: Done
+Step 2: Done
+Step 3: Done
+
+PART B
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: Done
+
+PART C
+Step 1: Done
+Step 2: jar -xvf $1.zip
+	javac *java
+	java $2 > output.txt
+Step 3: Done
+Step 4: jar -xvf $1.zip
+	javac *java
+	java $2 >> $2.txt
+Step 5: Done
+Step 6: jar -xvf $1.zip
+	javac *java 2> $2.txt
+	echo "===program run===" >> $2.txt
+	java $2 >> $2.txt
+Step 7: Done
+
+PART D
+Step 1: jar -xvf $1.zip
+	javac *java 2> error.txt
+	echo "===program run===" >> $2.txt
+	#java $2 >> $2.txt
+for f in input*.txt ; do ( java $2 < $f >> $1.txt ) ; done
+Step 2: Done
+Step 3: Done
+Step 4: Done
+Step 5: Done
+
+PART E
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: Done
+Step 5: Done
+Step 6: Done
+step 7: DOne
+Step 8: Done
+Step 9: Done
+
+PART F
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: Done
+Step 5: Done
+Step 6: Done
+Step 7: Done
+
+PART G
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: Done
+Step 5: Done
+Step 6: Done
+Step 7: done
+Step 8: Done
+Step 9: Done
+Step 10: Done 

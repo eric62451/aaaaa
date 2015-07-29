@@ -1,0 +1,42 @@
+Number test
+Expected 8.0 Actual: 8.0
+Expected 8.0 Actual: 8.0
+Expected 2.0 Actual: 2.0
+Expected -2.0 Actual: -2.0
+Expected 15.0 Actual: 15.0
+Expected 15.0 Actual: 15.0
+Expected 1.66667 Actual: 1.6666666666666667
+Expected 0.6 Actual: 0.6
+Expected false Actual: false
+Expected false Actual: false
+Expected true Actual: true
+Expected false Actual: false
+
+Boole test
+Expected false Actual: false
+Expected false Actual: false
+Expected true Actual: true
+Expected true Actual: true
+Expected true Actual: true
+Expected false Actual: false
+
+Environment test
+Expected 1 Actual: 1.0
+Expected 2 Actual: 2.0
+Expected Unknown Actual: unknown
+
+System test
+... Expected: 142.0 Actual: 142.0
+... Expected: 2.3809 Actual: 2.380952380952381
+... Expected: 58.0 Actual: 58.0
+... Expected: 4200.0 Actual: 4200.0
+... Expected: false Actual: false
+... Expected: true Actual: true
+... Expected: false Actual: false
+... Expected: false Actual: false
+... Expected: true Actual: true
+... Expected: true Actual: true
+... Expected: false Actual: false
+... Expected: true Actual: true
+... Expected: false Actual: false
+

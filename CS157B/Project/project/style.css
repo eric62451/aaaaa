@@ -1,0 +1,245 @@
+body {
+	margin: 0;
+	font-family: Calibri, Times New Roman, sans-serif;
+}
+#Menu {
+	text-align: center;
+	padding: 10px;
+}
+#showdata {
+	height: 60%;
+	overflow: auto;
+	padding: 10px;
+}
+#userInputs {
+	padding: 20px;
+}
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #FFF;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+h4 {
+	margin: 10px 0 10px 0;
+}
+.center {
+	text-align: center;
+}
+#rel {
+	position: relative;
+	height: 500px;
+}
+#accounts {
+	position: absolute;
+	top: 10%;
+	left: 3%;
+}
+#branch {
+	position: absolute;
+	top: 5%;
+	right: 3%;
+}
+#month {
+	position: absolute;
+	top: 0%;
+	left: 37%;
+}
+#product {
+	position: absolute;
+	top: 45%;
+	right: 3%;
+}
+#facts {
+	position: absolute;
+	top: 35%;
+	left: 37%;
+	background-color: #FFFCFC;
+}
+input[type="radio"], input[type="checkbox"] {
+	width: 1.3em;
+	height: 1.3em;
+}
+#showBaseCube {
+	position: absolute;
+	top: 65%;
+	left: 38%;
+	padding: 15px;
+	font-size: 12pt;
+	outline:none;
+}
+#performSlice {
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 12pt;
+	outline: none;
+	margin: 10px 0 10px 0;
+}
+/*Button taken from hellohappy.org*/
+button::-moz-focus-inner {
+ border: 0;
+}
+button.punch {
+	background: #4162a8;
+	border-top: 1px solid #38538c;
+	border-right: 1px solid #1f2d4d;
+	border-bottom: 1px solid #151e33;
+	border-left: 1px solid #1f2d4d;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+	box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+	color: #fff;
+	font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+	margin-bottom: 10px;
+	padding: 10px 0 12px 0;
+	text-align: center;
+	text-shadow: 0 -1px 1px #1e2d4d;
+	width: 150px;
+	-webkit-background-clip: padding-box;
+}
+button.punch:hover {
+	-webkit-box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+	box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+	cursor: pointer;
+}
+button.punch:active {
+	-webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+	box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+	margin-top: 58px;
+}
+button.punch {
+	margin-top: 54px;
+}
+#performDice {
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 12pt;
+	outline: none;
+	margin: 10px 0 10px 0;
+}
+.vls {
+	margin-top: 10px;
+}
+.textEntry {
+	padding: 6px;
+	width: 200px;
+	border-radius: 6px;
+	border: 1px solid #000;
+}
+.textEntry:focus {
+	border: 2px solid #000;
+	outline: none;
+}
+.hidden {
+	display: none;
+}
+#inputbox1 {
+	position: absolute;
+	top: 80%;
+	left: 40%;
+	padding: 15px;
+	font-size: 12pt;
+}
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.error {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 12pt;
+}
+#sliceInputs {
+	width: 275px;
+	margin: auto;
+	text-align: right;
+}
+/*Button taken from http://schier.co/blog/2014/10/23/creating-a-pure-css-dropdown-using-the-hover-selector.html */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	float:center;
+	border: 1px solid #000;
+}
+.plainbutton {
+	position: relative;
+	display: inline-block;
+	float:center;
+	border: 1px solid #000;
+}
+.dropdown .dropdown-menu {
+	position: absolute;
+	top: 100%;
+	display: none;
+	margin: 0;
+	/****************
+     ** NEW STYLES **
+     ****************/
+
+    list-style: none; /** Remove list bullets */
+	width: 100%; /** Set the width to 100% of it's parent */
+	padding: 0;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+/** Button Styles **/
+.dropdown button {
+	background: #FF6223;
+	color: #FFFFFF;
+	border: none;
+	margin: 0;
+	padding: 0.4em 1.7em;
+	font-size: 1em;
+}
+.plainbutton button {
+	background: #FF6223;
+	color: #FFFFFF;
+	border: none;
+	margin: 0;
+	padding: 0.4em 0.8em;
+	font-size: 1em;
+}
+/** List Item Styles **/
+.dropdown a {
+	display: block;
+	padding: 0.2em 0.8em;
+	text-decoration: none;
+	background: #CCCCCC;
+	color: #333333;
+	border: 1px solid #000;
+}
+/** List Item Hover Styles **/
+.dropdown a:hover {
+	background: #BBBBBB;
+}
+/*code taken from css-tricks.com*/
+input[type=text], textarea {
+ @include transition(all 0.30s ease-in-out);
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #DDDDDD;
+}
+input[type=text]:focus, textarea:focus {
+ @include box-shadow(0 0 5px rgba(81, 203, 238, 1));
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(81, 203, 238, 1);
+}
+
+#basetableresult {
+   height: 400px;
+   overflow: auto;
+}
+
+table
+{ 
+    margin-left: auto;
+    margin-right: auto;
+}

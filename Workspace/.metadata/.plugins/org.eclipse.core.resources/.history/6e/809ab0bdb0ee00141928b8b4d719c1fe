@@ -1,0 +1,15 @@
+import java.util.*;
+
+
+public class Cartesiantwo {
+	
+	public ArrayList<Set<Integer>> cartesian(ArrayList<Integer> one, ArrayList<Integer> two){
+		ArrayList<Set<Integer>> answer = new ArrayList<Set<Integer>>();
+		for(int i: one){
+			for(int j: two){
+				answer.add(new HashSet<Integer>(i,j));
+			}
+		}
+	}
+	return answer;
+}

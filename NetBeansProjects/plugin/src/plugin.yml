@@ -1,0 +1,29 @@
+name: WaypointGlobal
+main: com.waypoint.global.main
+commands:
+    sethome:
+        description: Create and name a location.
+        usage: /sethome <LocationName>
+    setglobalhome:
+        description: Create and name a global location.
+        usage: /setglobalhome <LocationName>
+    tele:
+        description: Teleport to your location.
+        usage: /tele <LocationName>
+    teleglobal:
+        description: Teleport to your global location.
+        usage: /teleglobal <LocationName>
+    randomtele:
+        description: Randomly teleports player to any public location
+        usage: /randomtele
+    printtele:
+        description: Prints all your personal locations.
+        usage: /printtele
+    printglobal:
+        description: Prints all global locations.
+        usage: /printglobal
+    switchpermission:
+        description: toggle place private/public.
+        usage: /switchpermission <LocationName>
+
+version: 0.1

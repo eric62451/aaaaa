@@ -1,0 +1,8 @@
+country GDP(millions of US$) GDP(per capita) population date
+Bahrain $30,800 $27,300 1,248,348 July 2011 est
+Kuwait $149,800 $40,700 2,646,314 NA
+Oman $80,890 $26,200 3,090,150 NA
+Qatar $181,700 $102,700 1,951,591 July 2011 est.
+Saudi Arabia $676,700 $24,000 26,534,504 NA
+United Arab Emirates $260,800 $48,500 5,314,317 NA 
+Yemen $63,240 $2,500 24,771,809 July 2011 est.

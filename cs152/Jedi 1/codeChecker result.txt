@@ -1,0 +1,29 @@
+Checking Number class:
+...expected = 142.0, actual = 142.0
+...expected = 4200.0, actual = 4200.0
+...expected = 58.0, actual = 58.0
+...expected = 2.380952380952381, actual = 2.380952380952381
+...expected = false, actual = false
+...expected = false, actual = false
+Checking Boole class:
+...expected = false, actual = false
+...expected = true, actual = true
+...expected = true, actual = true
+...expected = false, actual = false
+Checking Environment class:
+...expected = 100.0 actual = 100.0
+...expected = -58.0 actual = -58.0
+...expected = 142.0 actual = 142.0
+...expected = 2.380952380952381 actual = 2.380952380952381
+...expected = true actual = true
+...expected = false actual = false
+...expected = true actual = true
+...expected = false actual = false
+...expected = unknown actual = unknown
+Checking polymorphism:
+...exp = 100.0
+...exp = true
+...exp = Identifier(n1)
+...value = 100.0
+...value = true
+...value = Map(Identifier(b4) -> false, Identifier(n4) -> 2.380952380952381, Identifier(b3) -> true, Identifier(n2) -> -58.0)

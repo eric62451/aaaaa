@@ -1,0 +1,89 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Visual Cryptography Kit</title>
+<link rel=stylesheet href="/users/fms27/css/index.css" type="text/css">
+</head>
+<body>
+
+
+<h1>Visual Cryptography Kit</h1>
+
+<p>
+Visual cryptography (invented by Naor & Shamir in 1994; read their seminal
+<a href="http://www.wisdom.weizmann.ac.il/~naor/PAPERS/vis.ps">paper</a> or
+a locally cached <a href="vis.ps">copy</a>) is a method for securely
+encrypting messages in such a way that the recipient won't need a computer
+to decrypt them. The underlying cipher is essentially the one time pad; so
+the system is unbreakable in the information theoretical sense.
+<p>
+The freely downloadable <a href="vck.zip">Visual Cryptography Kit</a>
+(released under the <a href="http://www.gnu.org/">GNU</a> <a
+href="COPYING.TXT">General Public Licence</a>) allows easy practical
+experimentation with this fascinating invention. <small class=comment>It
+requires <a href="http://www.python.org/">Python</a> and <a
+href="http://www.pythonware.com/products/pil/">PIL</a>, both free too; on
+Wintel, an easy way to get both in one go is to download Fredrik Lundh's <a
+href="http://www.pythonware.com/downloads/py15-980706.exe">precompiled
+installation for Win32</a> from his <a
+href="http://www.pythonware.com/downloads.htm">goodies page</a>.</small>
+<p>
+The way this stuff works is basically as follows. You have a "key", which
+is an acetate foil with random dots on it (<em>nobody</em> could extract
+any useful information from it). You receive a "cryptograph", which is
+another acetate with more random dots on it (it too, taken alone, will
+yield no information whatsoever to even the most determined of
+attackers). But you overlay the key on top of the cryptograph and hey! you
+see a secret message. Read my <a href="vck-poster.pdf">poster</a> for a
+more detailed and visual introduction, then get the <a
+href="vck.zip">software</a> and make some secret messages of your own! Or
+if you want a quick start, just photocopy the pictures below on a
+transparency, put them on top of each other and see what you get...
+<p>
+<img src="andy_1.gif" alt="key" height="220" width="200">
+<p>
+<img src="andy_2.gif" alt="cryptograph" height="220" width="200">
+<p>
+I originally implemented some visual cryptography utilities in C++ using
+the PBM file formats and conversion tools<!--: <a
+href="crittografia-visiva.pdf">here</a> is a description of that
+preliminary work (in Italian)-->. But the integration of the various bits
+was less than satisfactory. So I rewrote it all as a Python module (view the <a
+href="vck.py.html">source code</a> online), based on <a
+href="http://www.pythonware.com/products/pil/">PIL</a> and Tkinter. This
+work was presented as the 7th international <a
+href="http://www.python.org/">Python</a> <a
+href="http://www.foretec.com/python/workshops/1998-11/">conference</a>. The
+<a href="vck-poster.pdf">colour poster</a> was designed for A1 paper, but
+the A4 version available here, despite being 8 times smaller, will still
+print reasonably well on a 600 dpi black and white laser. You can also view
+the <a href="vck-abstract.html">abstract</a> (or <a
+href="vck-abstract.pdf">PDF</a>) that appeared in the proceedings of the
+conference.
+<p>
+For extra fun, VCK also implements the greyscale variant described in the
+original paper: give it a picture of your face and it will split it into
+two postscript files that, when combined, will look similar to this (squint
+and you might even recognise who this famous personality is...)
+<p>
+<img src="face.gif" alt="who is this?">
+<p>
+<hr>
+
+<p>Back to <a href="http://www.cl.cam.ac.uk/~fms27/">Frank Stajano</a>'s
+home page</p>
+
+<P>
+<A HREF="http://www.w3.org/pub/WWW/Style/CSS/Buttons"><IMG ALT="CSS"
+SRC="../images/mwcss.gif"></A>
+
+<A HREF="http://validator.w3.org/"><IMG
+     SRC="../images/vh40.gif"
+     ALT="Valid HTML 4.0!" HEIGHT=31 WIDTH=88></A> validated (<a href="http://validator.w3.org/check?url=http://www.cl.cam.ac.uk/~fms27/vck/">recheck</a>)
+
+<!--A HREF="http://www.python.org/"--><IMG ALT="Python powered"
+SRC="../images/PythonPoweredSmall.gif"><!--/A-->
+</body>
+</html>

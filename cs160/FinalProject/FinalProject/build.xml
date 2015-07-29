@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Racqual" default="deploy" basedir=".">
+	<tstamp prefix="build-info">
+		<format property="current-date" pattern="d-MMMM-yyyy" locale="en" />
+		<format property="current-time" pattern="hh:mm:ss a z" locale="en" />
+	</tstamp>
+	<property file="build.properties"/>
+	<target name="build" depends="">
+		<mkdir dir="${build.dir}" />
+		<delete file="${build.dir}/${war.name}" />
+		<war warfile="${build.dir}/${war.name}" webxml="${webxml}">
+			<classes dir="${classes.dir}" />
+			<fileset dir="${web.dir}">
+				<!-- Need to exclude it since webxml is an attribute of the war tag above -->
+				<exclude name="WEB-INF/web.xml" />
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="${builder}" />
+				<attribute name="Built-On" value="${build-info.current-date}" />
+				<attribute name="Built-At" value="${build-info.current-time}" />
+			</manifest>
+		</war>
+	</target>
+
+	<target name="deploy" depends="build, undeploy, createdb">
+		<copy file="${build.dir}/${war.name}" todir="${tomcat.dir}/webapps/"/>
+		<exec executable="${tomcat.dir}/bin/startup.bat"/>
+	</target>
+
+	<target name="undeploy" depends="">
+		<exec executable="${tomcat.dir}/bin/shutdown.bat"/>
+	</target>
+
+	<target name="clean" depends="">
+		<delete file="${build.dir}/${war.name}" />
+		<delete file="${tomcat.dir}/webapps/${war.name}" />
+	</target>
+
+	<target name="createdb" depends="">
+		
+	</target>
+
+	<target name="dropdb" depends="">
+		
+	</target>
+
+</project>

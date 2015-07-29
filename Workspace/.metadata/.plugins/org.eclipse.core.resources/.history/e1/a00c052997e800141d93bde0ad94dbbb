@@ -1,0 +1,19 @@
+package closures;
+
+import java.util.function.Predicate;
+
+public class recClosures {
+	
+	public static Predicate<Integer> union(Predicate<Integer> memA, Predicate<Integer> memB) {
+		return (Integer x) ->{
+			return memA.test(x) || memB.test(x);
+		};
+	}
+	
+	public static Predicate<Integer> intersect(Predicate<Integer> memA, Predicate<Integer> memB) {
+		return (Integer x) ->{
+			return memA.test(x) && memB.test(x);
+		};
+	}
+
+}

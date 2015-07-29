@@ -1,0 +1,91 @@
+Eric Tam (Scribe) / Joshua Warner (Driver)
+
+PART A
+Step 1: it printed all the lines
+Step 2: to ignore tabs, new line, and carriage for one or more times
+Step 3: [^A-Za-z_]+
+Step 4: all the words and underscore
+Step 5: Each word with its line number next to it
+Step 6: a treemap and a treeset
+Step 7: Done
+Step 8: the identifiers with only the line number of last ocurrence
+Step 9: because we are replacing the sets with a new set everytime that identifier appears
+Step 10: nullpointerexception
+Step 11: because the first time, we havent initialize the set yet
+Step 12: when we get(identifier) it will equals null
+Step 13: if it is not equals null then add the linenumber into the set
+Step 14: Done
+Step 15: it compiles
+Step 16: Done
+Step 17: it print all the keys
+Step 18: it looks same as the example
+Step 19: Done
+Step 20: all the output without reserved words
+Step 21: Done
+
+PART B
+Step 1: Done
+Step 2: Done
+Step 3: Done
+Step 4: it print all the files
+Step 5: yes, the order is just different, anything that can store and remove the file on first use will work
+
+PART C
+Step 1: C = 0, B and A equals anything as long as they are not equal
+Step 2: 
+0B+C=B0
+1B+C=B1
+...
+...
+
+Step 3: 
+01+c=10
+02+c=20
+...
+...
+
+Step 4: Done
+
+Step 5:
+01+9=10
+12+9=21
+23+9=32
+34+9=43
+45+9=54
+56+9=65
+67+9=76
+78+9=87
+
+Step 7: 
+2345+3456=5801
+2436+4365=6801
+
+Step 8:
+2817+0368=03185
+2819+0368=03187
+3712+0467=04179
+3719+0457=04176
+3821+0468=04289
+3829+0458=04287
+5731+0647=06378
+5732+0647=06379
+5849+0638=06487
+6415+0734=07149
+6419+0724=07143
+6524+0735=07259
+6851+0738=07589
+6853+0728=07581
+7316+0823=08139
+7429+0814=08243
+7531+0825=08356
+7534+0825=08359
+7539+0815=08354
+7643+0826=08469
+7649+0816=08465
+8324+0913=09237
+8432+0914=09346
+8542+0915=09457
+9567+1085=10652
+
+Step 9: yes, because we just use the queue as a storage so the stack can work the same
+Step 10: Done

@@ -1,0 +1,69 @@
+Eric Tam (Scribe) / Benjamin Ko (Driver)
+
+PART A
+Step 1: 1961=9000
+	2003=65000
+Step 2: $615384.62
+Step 3: 
+nextLine() and next()
+run next() for 16 times
+for 1913 run next for 14 times
+if year modulo 5 equals 0 then nextLine
+when last year have been reached
+Step 4:
+0	9.9
+1	10
+2	10.1 
+3	10.9
+Step 5: there's a lot of html code
+Step 6: 1944	94	2090909.09
+Step 7: the lines starting with <tr><td align="center">
+Step 8: 
+"1944"
+"94"
+"&nbsp"
+"200,000"
+Step 9: replace(",","")
+	Int.parseInt(string)
+Step 10: 
+nextLine()
+from line 334 to line 424
+array.get(0),array.get(1), array.get(4) replace all comma with nothing
+divide by the cpi of the year and multiply by the cpi of 2003
+Year Taxrate Taxable income converted into 2003
+Step 11:
+"1914"
+"7"
+"&nbsp;"
+"500,000"
+1914	7	9200000
+"1944"
+"94"
+"&nbsp;"
+"200,000"
+1944	94	2090909.09
+
+PART B
+Step 1: Done
+Step 2: because the starting year also counts so we have to add one
+Step 3: it added throws in the method
+Step 4: just throws IOException
+Step 5: Done
+Step 6: Done
+Step 7: because we need to throw IOException
+Step 8: Adjusted amount:     615385, no its not the same
+Step 9: Null
+Step 10: its has 91 object in there
+Step 11: all objects are 0.0
+Step 12: it starts adding values into the cpi array
+Step 13: it finish running the code
+
+PART C
+Step 1: it gives us an error
+Step 2: Main
+Step 3: Done
+Step 4: prints out the message we put.
+
+PART D
+Step 1: it fill out the code for us
+Step 2: it filled all the code and we just pressed only a few buttons

@@ -1,0 +1,87 @@
+Problem 1
+
+loop 0
+C1
+C2
+end 
+C3
+C4
+
+
+Problem 2
+
+CFL::= RULE | RULE;CFL
+RULE::= VARIABLE::=TERM
+TERM::= VARIABLE | LITERAL | CONCATENATION | CHOICE | QUANTIFIED | (TERM)
+CONCATENATION::= TERM ~ TERM
+CHOICE::= TERM | TERM
+QUATIFIED::= TERM+ | TERM* | TERM?
+LITERAL::= .+
+VARIABLE::= [A-Z]+
+
+
+Problem 3
+
+CFL=> RULE | RULE;CFL
+CFL=> RULE
+CFL=> VARIABLE::=TERM
+CFL=> EXP::=TERM
+CFL=> EXP::=CONCATENATION
+CFL=> EXP::=TERM ~ TERM
+CFL=> EXP::=QUANTIFIED ~ TERM
+CFL=> EXP::=TERM+ ~ TERM
+CFL=> EXP::=(TERM)+ ~ TERM
+CFL=> EXP::=(CHOICE)+ ~ TERM
+CFL=> EXP::=(TERM | TERM)+ ~ TERM
+CFL=> EXP::=(LITERAL | TERM)+ ~ TERM
+CFL=> EXP::=(0 | TERM)+ ~ TERM
+CFL=> EXP::=(0 | LITERAL)+ ~ TERM
+CFL=> EXP::=(0 | 1)+ ~ TERM
+CFL=> EXP::=(0 | 1)+ ~ TERM
+CFL=> EXP::=(0 | 1)+ ~ QUANTIFIED
+CFL=> EXP::=(0 | 1)+ ~ TERM?
+CFL=> EXP::=(0 | 1)+ ~ (TERM)?
+CFL=> EXP::=(0 | 1)+ ~ (CONCATENATION)?
+CFL=> EXP::=(0 | 1)+ ~ (TERM ~ TERM)?
+CFL=> EXP::=(0 | 1)+ ~ (LITERAL ~ LITERAL)?
+CFL=> EXP::=(0 | 1)+ ~ (LITERAL ~ TERM)?
+CFL=> EXP::=(0 | 1)+ ~ (\+ ~ TERM)?
+CFL=> EXP::=(0 | 1)+ ~ (\+ ~ LITERAL)?
+CFL=> EXP::=(0 | 1)+ ~ (\+ ~ EXP)?
+
+
+Problem 4
+
+001010...
+011101...
+000100...
+000010...
+000000...
+111111...
+...
+
+Diagonally we would get values like 010001...
+The set is recursive because we are able to access all the binary numbers by choosing the index, but it is not REG because there can be infinte amount of rows with unique patterns
+
+
+Problem 5
+
+(START,a) => (1,a,R)
+(1,a) => (2,a,R)
+(2,a) => (3,a,R)
+(3,a) => (1,a,R)
+(3,b) => (4,b,R)
+(4,b) => (4,b,R)
+(4,a) => (1,a,R)
+(4,0) => (ACCEPT,b,R)
+
+
+Problem 6
+
+a. FALSE
+b. TRUE
+c. TRUE
+d. TRUE
+e. FALSE
+f. TRUE
+g. TRUE

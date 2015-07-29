@@ -1,0 +1,67 @@
+Joshua Warner - Driver
+Eric Tam - Scribe
+Lab 3 - Part 2
+
+PART H:
+Step 1:  The AddressBookDemo switch from gui to console because there is a if statements that check for string[] args if there is any file name
+Step 2:  Prompts to choose which file.
+Step 3:  it just run normally without having to choose which file.
+
+PART I
+Step 1: 
+2
+Diaz
+Phone
+5
+
+Step 2:it says that there is no entry
+
+PART J
+Step 1: 
+1
+Diaz
+Phone
+(408) 924-5060
+2
+Diaz
+Phone
+5
+
+Step 2: Done
+Step 3: Its shows all the output that is suppose to be shown in the console when the code ran
+Step 4: Same as the output.txt file, we use "cat expected.txt"
+Step 5: nothing happends because there is no difference since expected.txt is just a clone of output.txt
+Step 6: it shows the difference between the expected and output, output has an extra 5 lines because we chose to save in the input and when we do it again it shows that entry is updated.
+Step 7:
+ls - list files in home directory
+pwd - show what is our home directory
+cp - copy file
+cat - read file in the console
+diff - check difference between 2 files
+
+PART K
+Step 1: they are not lined up
+Step 2: 63, we checked it from the emac
+Step 3: Line 23
+Step 4: it is already off because there is a code (setq indent-tab mode nil)
+Step 5: there is no 0D at the end of each line, just 0a at the start of each line
+Step 6: 0d at the end of each line and 0a at the start of each line
+Step 7: it says that there is a syntax error
+Step 8: there is no more 0d
+Step 9: it worked, and it says i found some files
+Step 10: dos2unix ExhibiyB.txt
+Step 11: it is c3a9
+Step 12: it is e9
+Step 13: ExhibitD is right
+Step 14: the system doesnt know what encoding the file is
+Step 15: Bahrain
+Step 16: to say match
+Step 17: no match
+Step 18: efbbbf4261
+Step 19: Ba
+Step 20: byte 1 then byte 0
+Step 21: by starting with feff it determines the enconding style
+Step 22: in utf-8 there is no orders so there is no order mark
+step 23: utf 8 has  the byte order mark of efbbbf
+Step 24: it says no match ef
+Step 25: to ignore the byte order mark.

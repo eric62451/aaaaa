@@ -1,0 +1,61 @@
+import java.util.*;
+
+
+public class Cartesiantwo {
+	
+	public static void main(String[] args) {
+		Set<Integer> one = new HashSet<Integer>();
+		Set<Integer> two = new HashSet<Integer>();
+		Set<Integer> three = new HashSet<Integer>();
+		one.add(1);
+		one.add(2);
+		two.add(3);
+		two.add(4);
+		three.add(5);
+		three.add(6);
+		System.out.println(cartesiana(one,two));
+		//System.out.println(cartesian(one,two,three));
+	}
+	
+	public static Set<Set<Integer>> cartesiana(Set<Integer> one, Set<Integer> two){
+		Set<Set<Integer>> answer = new HashSet<Set<Integer>>();
+		for(int i: one){
+			for(int j: two){
+				Set a = new HashSet<Integer>();
+				a.add(i);
+				a.add(j);
+				answer.add(a);
+			}
+		}
+		return answer;
+	}
+	
+	public static ArrayList<Set<Integer>> cartesian(ArrayList<Integer> ... args){
+		if(args.length<2) throw new IllegalArgumentException();
+		ArrayList<Set<Integer>> answer = new ArrayList<Set<Integer>>();
+		for(int i: args[0]){
+			for(int j: args[1]){
+				Set a = new HashSet<Integer>();
+				a.add(i);
+				a.add(j);
+				answer.add(a);
+			}
+		}
+		for(int i = 2;i<args.length;i++){
+			ArrayList<Set<Integer>> temp = (ArrayList<Set<Integer>>) answer.clone();
+			answer.clear();
+			for(Set x: temp){
+				for(int y : args[i]){
+					Set s = new HashSet<Integer>();
+					s.addAll(x);
+					s.add(y);
+					answer.add(s);
+					
+				}
+			}
+			
+		}
+		return answer;
+	}
+	
+}

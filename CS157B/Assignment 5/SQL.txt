@@ -1,0 +1,15 @@
+SQL> show parameter shared_pool_size;
+
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+shared_pool_size                     big integer 0
+
+SQL> alter system set shared_pool_size=10M;
+
+System altered.
+
+SQL> show parameter shared_pool_size;
+
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+shared_pool_size                     big integer 12M

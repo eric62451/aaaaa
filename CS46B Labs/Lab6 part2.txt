@@ -1,0 +1,7 @@
+Eric Tam (Scribe) / Joshua (Driver)
+
+PART E
+
+Step 1: is located in sandbox
+Step 2: hg pull, hg status, hg add, hg commit, hg push
+Step 3: no changes

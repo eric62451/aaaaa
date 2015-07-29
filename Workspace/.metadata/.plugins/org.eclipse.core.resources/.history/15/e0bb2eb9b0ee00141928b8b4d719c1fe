@@ -1,0 +1,10 @@
+import java.util.*;
+
+
+public class Cartesiantwo {
+	
+	public ArrayList<Set<Integer>> cartesian(){
+		
+	}
+
+}

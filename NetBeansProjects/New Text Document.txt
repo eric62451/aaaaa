@@ -1,0 +1,3 @@
+int index1 = line.indexOf("$");
+if (index1 > 0)
+{

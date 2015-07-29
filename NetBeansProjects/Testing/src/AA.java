@@ -1,0 +1,16 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author admin
+ */
+public abstract class AA {
+
+    void read(){
+
+    }
+    public abstract void ad();
+}

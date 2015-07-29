@@ -1,0 +1,2 @@
+/*dice restrict to 'i-store' and dates in year 2016*/
+SELECT f.storeID, s.city, s.county, month, year, sum(sales_in_dollar) FROM sales f, store s, date d WHERE f.storeID = s.storeID AND f.dateID = d.dateID AND f.storeID = 'I-Store' AND year = 2016 GROUP BY f.storeID, month;

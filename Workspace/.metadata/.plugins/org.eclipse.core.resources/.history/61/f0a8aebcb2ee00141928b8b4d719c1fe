@@ -1,0 +1,40 @@
+import java.util.*;
+
+
+public class Cartesiantwo {
+	
+	public ArrayList<Set<Integer>> cartesian(ArrayList<Integer> one, ArrayList<Integer> two){
+		ArrayList<Set<Integer>> answer = new ArrayList<Set<Integer>>();
+		for(int i: one){
+			for(int j: two){
+				answer.add(new HashSet<Integer>(i,j));
+			}
+		}
+		return answer;
+	}
+	
+	public ArrayList<Set<Integer>> cartesian(ArrayList<Integer> ... args){
+		if(args.length<2) throw new IllegalArgumentException();
+		ArrayList<Set<Integer>> answer = new ArrayList<Set<Integer>>();
+		for(int i: args[0]){
+			for(int j: args[1]){
+				answer.add(new HashSet<Integer>(i,j));
+			}
+		}
+		for(int i = 2;i<args.length;i++){
+			ArrayList<Set<Integer>> temp = (ArrayList<Set<Integer>>) answer.clone();
+			answer.clear();
+			for(Set x: temp){
+				for(int y : args[i]){
+					Set s = new HashSet<Integer>(x);
+					s.add(y);
+					answer.add(s);
+					
+				}
+			}
+			
+		}
+		return answer;
+	}
+	
+}

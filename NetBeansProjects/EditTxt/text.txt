@@ -1,0 +1,15 @@
+T789RT:TV:789.59:221:3
+
+Bruce Anderson;Milpitas;EZ123;12
+
+Frys;Sunnyvale;AC349;150
+
+Kate Willis;LA;EZ901;33
+
+D2781XY:DVD Player:129.95:35:0
+
+C239SD:Camcoder:395.99:50:2
+
+John Adams;San Jose;TY3WE;5
+
+Lisa Spencer;Los Altos;ER4XC;20
